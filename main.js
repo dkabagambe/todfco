@@ -95,6 +95,11 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
             document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+            if (navMenu.classList.contains('active')) {
+                document.body.classList.add('menu-open');
+            } else {
+                document.body.classList.remove('menu-open');
+            }
         });
 
         // Close menu when clicking on links
@@ -103,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
                 document.body.style.overflow = '';
+                document.body.classList.remove('menu-open');
             });
         });
 
@@ -112,6 +118,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
                 document.body.style.overflow = '';
+                document.body.classList.remove('menu-open');
+            }
+        });
+        
+        // Close menu when clicking the close button (X)
+        navMenu.addEventListener('click', (e) => {
+            if (e.target === navMenu || e.target.textContent === '✕' || e.target.closest('::before')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+                document.body.classList.remove('menu-open');
+            }
+        });
+        
+        // Close menu on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+                document.body.classList.remove('menu-open');
             }
         });
     }
@@ -263,4 +290,45 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     console.log('TODFCO Website Initialized Successfully! 🚀');
+});
+
+// Owl Carousel for Partners
+$(document).ready(function() {
+    $('.partners-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true
+            },
+            480: {
+                items: 2,
+                nav: false,
+                dots: true
+            },
+            768: {
+                items: 3,
+                nav: true,
+                dots: true
+            },
+            1024: {
+                items: 4,
+                nav: true,
+                dots: true
+            },
+            1200: {
+                items: 5,
+                nav: true,
+                dots: true
+            }
+        }
+    });
 });
