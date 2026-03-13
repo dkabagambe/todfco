@@ -292,7 +292,202 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('TODFCO Website Initialized Successfully! 🚀');
 });
 
-// Owl Carousel for Partners
+// Gallery Lightbox Functionality
+class GalleryLightbox {
+    constructor() {
+        this.lightbox = document.getElementById('gallery-lightbox');
+        this.lightboxImage = document.getElementById('lightbox-image');
+        this.lightboxTitle = document.getElementById('lightbox-title');
+        this.lightboxDescription = document.getElementById('lightbox-description');
+        this.lightboxDate = document.getElementById('lightbox-date');
+        this.currentImageSpan = document.getElementById('current-image');
+        this.totalImagesSpan = document.getElementById('total-images');
+        this.loading = document.querySelector('.lightbox-loading');
+        
+        this.currentIndex = 0;
+        this.galleryItems = [];
+        this.isOpen = false;
+        
+        this.init();
+    }
+    
+    init() {
+        // Collect all gallery items
+        this.galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+        
+        if (this.galleryItems.length === 0) return;
+        
+        // Update total images counter
+        this.totalImagesSpan.textContent = this.galleryItems.length;
+        
+        // Add click handlers to gallery items
+        this.galleryItems.forEach((item, index) => {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.openLightbox(index);
+            });
+        });
+        
+        // Close button handler
+        const closeBtn = document.querySelector('.lightbox-close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => this.closeLightbox());
+        }
+        
+        // Overlay click to close
+        const overlay = document.querySelector('.lightbox-overlay');
+        if (overlay) {
+            overlay.addEventListener('click', () => this.closeLightbox());
+        }
+        
+        // Navigation handlers
+        const prevBtn = document.querySelector('.lightbox-prev');
+        const nextBtn = document.querySelector('.lightbox-next');
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => this.navigateImage(-1));
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => this.navigateImage(1));
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!this.isOpen) return;
+            
+            switch(e.key) {
+                case 'Escape':
+                    this.closeLightbox();
+                    break;
+                case 'ArrowLeft':
+                    this.navigateImage(-1);
+                    break;
+                case 'ArrowRight':
+                    this.navigateImage(1);
+                    break;
+            }
+        });
+        
+        // Touch/swipe support for mobile
+        this.initTouchSupport();
+    }
+    
+    openLightbox(index) {
+        this.currentIndex = index;
+        this.isOpen = true;
+        
+        // Show lightbox
+        this.lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Load image
+        this.loadImage(index);
+    }
+    
+    closeLightbox() {
+        this.isOpen = false;
+        
+        // Hide lightbox
+        this.lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        // Reset image
+        setTimeout(() => {
+            this.lightboxImage.src = '';
+            this.lightboxImage.alt = '';
+        }, 300);
+    }
+    
+    loadImage(index) {
+        const item = this.galleryItems[index];
+        if (!item) return;
+        
+        // Show loading
+        this.loading.classList.add('active');
+        
+        // Get image and info
+        const img = item.querySelector('img');
+        const title = item.querySelector('h3')?.textContent || '';
+        const description = item.querySelector('p')?.textContent || '';
+        const date = item.querySelector('.gallery-date')?.textContent || '';
+        
+        // Create new image to preload
+        const newImg = new Image();
+        newImg.onload = () => {
+            // Update lightbox content
+            this.lightboxImage.src = img.src;
+            this.lightboxImage.alt = img.alt;
+            this.lightboxTitle.textContent = title;
+            this.lightboxDescription.textContent = description;
+            this.lightboxDate.textContent = date;
+            this.currentImageSpan.textContent = index + 1;
+            
+            // Hide loading
+            this.loading.classList.remove('active');
+        };
+        
+        newImg.onerror = () => {
+            // Hide loading even on error
+            this.loading.classList.remove('active');
+            console.error('Failed to load image:', img.src);
+        };
+        
+        newImg.src = img.src;
+    }
+    
+    navigateImage(direction) {
+        if (!this.isOpen) return;
+        
+        this.currentIndex += direction;
+        
+        // Wrap around
+        if (this.currentIndex < 0) {
+            this.currentIndex = this.galleryItems.length - 1;
+        } else if (this.currentIndex >= this.galleryItems.length) {
+            this.currentIndex = 0;
+        }
+        
+        this.loadImage(this.currentIndex);
+    }
+    
+    initTouchSupport() {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const handleTouchStart = (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        };
+        
+        const handleTouchEnd = (e) => {
+            if (!this.isOpen) return;
+            
+            touchEndX = e.changedTouches[0].screenX;
+            const swipeDistance = touchEndX - touchStartX;
+            
+            // Minimum swipe distance
+            if (Math.abs(swipeDistance) > 50) {
+                if (swipeDistance > 0) {
+                    // Swipe right - previous image
+                    this.navigateImage(-1);
+                } else {
+                    // Swipe left - next image
+                    this.navigateImage(1);
+                }
+            }
+        };
+        
+        // Add touch event listeners
+        this.lightbox.addEventListener('touchstart', handleTouchStart, { passive: true });
+        this.lightbox.addEventListener('touchend', handleTouchEnd, { passive: true });
+    }
+}
+
+// Initialize gallery lightbox
+document.addEventListener('DOMContentLoaded', () => {
+    new GalleryLightbox();
+});
 $(document).ready(function() {
     $('.partners-carousel').owlCarousel({
         loop: true,
