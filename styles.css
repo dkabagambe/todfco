@@ -1192,6 +1192,226 @@ section {
     line-height: 1.8;
 }
 
+/* Hero Sections for All Pages */
+.about-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-helen1-28447761.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-magda-ehlers-pexels-14562092.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-dibakar-roy-2432543-26202074.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.volunteer-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-helen1-28447774.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.donate-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-helen1-28447761.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-magda-ehlers-pexels-14562092.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-dibakar-roy-2432543-26202074.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.resources-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pexels-helen1-28447774.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Content Styling */
+.about-hero .hero-content,
+.services-hero .hero-content,
+.contact-hero .hero-content,
+.volunteer-hero .hero-content,
+.donate-hero .hero-content,
+.blog-hero .hero-content,
+.gallery-hero .hero-content,
+.resources-hero .hero-content {
+    max-width: 900px;
+    padding: 0 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+.about-hero .hero-content h1,
+.services-hero .hero-content h1,
+.contact-hero .hero-content h1,
+.volunteer-hero .hero-content h1,
+.donate-hero .hero-content h1,
+.blog-hero .hero-content h1,
+.gallery-hero .hero-content h1,
+.resources-hero .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-hero .hero-content p,
+.services-hero .hero-content p,
+.contact-hero .hero-content p,
+.volunteer-hero .hero-content p,
+.donate-hero .hero-content p,
+.blog-hero .hero-content p,
+.gallery-hero .hero-content p,
+.resources-hero .hero-content p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Responsive */
+@media (max-width: 768px) {
+    .about-hero,
+    .services-hero,
+    .contact-hero,
+    .volunteer-hero,
+    .donate-hero,
+    .blog-hero,
+    .gallery-hero,
+    .resources-hero {
+        min-height: 80vh;
+        background-attachment: scroll;
+    }
+    
+    .about-hero .hero-content h1,
+    .services-hero .hero-content h1,
+    .contact-hero .hero-content h1,
+    .volunteer-hero .hero-content h1,
+    .donate-hero .hero-content h1,
+    .blog-hero .hero-content h1,
+    .gallery-hero .hero-content h1,
+    .resources-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero .hero-content p,
+    .services-hero .hero-content p,
+    .contact-hero .hero-content p,
+    .volunteer-hero .hero-content p,
+    .donate-hero .hero-content p,
+    .blog-hero .hero-content p,
+    .gallery-hero .hero-content p,
+    .resources-hero .hero-content p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero .hero-content h1,
+    .services-hero .hero-content h1,
+    .contact-hero .hero-content h1,
+    .volunteer-hero .hero-content h1,
+    .donate-hero .hero-content h1,
+    .blog-hero .hero-content h1,
+    .gallery-hero .hero-content h1,
+    .resources-hero .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .about-hero .hero-content p,
+    .services-hero .hero-content p,
+    .contact-hero .hero-content p,
+    .volunteer-hero .hero-content p,
+    .donate-hero .hero-content p,
+    .blog-hero .hero-content p,
+    .gallery-hero .hero-content p,
+    .resources-hero .hero-content p {
+        font-size: 1rem;
+    }
+}
+
 /* Hero Sections */
 .hero-section {
     position: relative;
