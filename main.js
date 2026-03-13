@@ -488,6 +488,32 @@ class GalleryLightbox {
 document.addEventListener('DOMContentLoaded', () => {
     new GalleryLightbox();
 });
+
+// Initialize Swiper Slider
+$(document).ready(function() {
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        speed: 1000,
+    });
+});
+
+// Owl Carousel for Partners
 $(document).ready(function() {
     $('.partners-carousel').owlCarousel({
         loop: true,
