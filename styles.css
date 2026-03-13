@@ -192,10 +192,519 @@ html {
     animation: gradient 3s ease infinite;
 }
 
+/* Professional Container System */
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
+    width: 100%;
+}
+
+/* Ultra-wide screens (1600px+) */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+        padding: 0 3rem;
+    }
+}
+
+/* Large screens (1200px - 1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .container {
+        max-width: 1400px;
+        padding: 0 2.5rem;
+    }
+}
+
+/* Laptops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 900px;
+        padding: 0 1.5rem;
+    }
+}
+
+/* Large Mobile (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1.25rem;
+    }
+}
+
+/* Small Mobile (≤575px) */
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* Professional Content Centering */
+.section-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    text-align: center;
+    margin: 0 auto 1rem auto;
+}
+
+.section-header p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Grid Centering Fixes */
+.grid-centered {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Text Centering for All Devices */
+.text-center-mobile {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .text-center-mobile {
+        text-align: center;
+    }
+}
+
+.text-center-tablet {
+    text-align: left;
+}
+
+@media (max-width: 991px) {
+    .text-center-tablet {
+        text-align: center;
+    }
+}
+
+/* Professional Section Layouts */
+section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1600px) {
+    section {
+        padding: 8rem 0;
+    }
+}
+
+/* Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    section {
+        padding: 5rem 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        padding: 4rem 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    section {
+        padding: 3rem 0;
+    }
+}
+
+/* Hero Section Professional Centering */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    text-align: center;
+    margin: 0 auto 2.5rem auto;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Stats Section Professional Centering */
+.stats {
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #2563eb, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    color: #0f172a;
+}
+
+/* Approach Section Professional Centering */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.approach-card {
+    text-align: center;
+    padding: 3rem 2.5rem;
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.approach-card h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.approach-card p {
+    text-align: center;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+/* Program Section Professional Centering */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.program-card {
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.program-content {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.program-content h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.program-content p {
+    text-align: center;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.program-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+/* Testimonials Section Professional Centering */
+.testimonials {
+    text-align: center;
+}
+
+.testimonials-slider {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-item {
+    text-align: center;
+    padding: 3rem 2.5rem;
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.testimonial-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-content p {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #0f172a;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.author-info {
+    text-align: left;
+}
+
+.author-info h4 {
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
+.author-info p {
+    text-align: left;
+    margin: 0;
+}
+
+/* Gallery Section Professional Centering */
+.gallery {
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery-item {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: scaleIn 0.6s ease-out;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
+}
+
+.overlay-content h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.overlay-content p {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.gallery-date {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Partners Section Professional Centering */
+.partners {
+    text-align: center;
+}
+
+.partners-carousel {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partner-item {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.partner-logo {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Call to Action Professional Centering */
+.call-to-action {
+    text-align: center;
+    position: relative;
+    padding: 8rem 0;
+    background: linear-gradient(135deg, #2563eb, #10b981);
+    overflow: hidden;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.cta-content h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+}
+
+.cta-content p {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    text-align: center;
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button.primary {
+    background: white;
+    color: #2563eb;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Header Styles */
@@ -210,6 +719,273 @@ html {
     z-index: 1000;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile and Tablet Professional Centering */
+@media (max-width: 991px) {
+    /* Tablet Centering */
+    .hero-content {
+        max-width: 700px;
+        padding: 0 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.125rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+    
+    .approach-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .program-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .testimonial-item {
+        padding: 2rem 1.5rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 1.125rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.125rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile Centering */
+    .hero-content {
+        max-width: 500px;
+        padding: 0 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .stat-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .approach-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .approach-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .program-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .program-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .program-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .testimonial-item {
+        padding: 1.5rem 1rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .author-info {
+        text-align: center;
+    }
+    
+    .author-info h4 {
+        text-align: center;
+    }
+    
+    .author-info p {
+        text-align: center;
+    }
+    
+    .partners-carousel {
+        max-width: 100%;
+    }
+    
+    .partner-logo {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .cta-content {
+        max-width: 500px;
+        padding: 0 1rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small Mobile Centering */
+    .hero-content {
+        max-width: 400px;
+        padding: 0 0.75rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .stat-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 1rem;
+    }
+    
+    .approach-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .approach-card h3 {
+        font-size: 1.125rem;
+    }
+    
+    .approach-card p {
+        font-size: 0.9rem;
+    }
+    
+    .program-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .program-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .program-content p {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-item {
+        padding: 1rem 0.75rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 0.9rem;
+    }
+    
+    .partner-logo {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .cta-content p {
+        font-size: 0.9rem;
+    }
+    
+    .cta-button {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
 }
 
 .header.scrolled {
