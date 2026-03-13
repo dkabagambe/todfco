@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -92,10 +92,15 @@
             <img src="images/logo.jpeg" alt="TODFCO Logo" />
           </div>
           <div class="nav-menu">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="volunteer.html" class="nav-link">Volunteer</a>
+            <a href="donate.html" class="nav-link">Donate</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="resources.html" class="nav-link">Resources</a>
           </div>
           <div class="hamburger">
             <span></span>
@@ -179,55 +184,391 @@
 
     <!-- Main Content -->
     <main>
-      <section class="services-preview">
-        <div class="container">
-          <h2>Our Disaster Services</h2>
-          <div class="services-grid">
-            <div class="service-card">
-              <h3>Disaster Preparedness</h3>
-              <p>
-                Training communities to prevent and prepare for disasters
-                through awareness and capacity building
-              </p>
+        <!-- Quick Introduction -->
+        <section class="quick-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="intro-content animate-fadeInUp">
+                            <h2>Who We Are</h2>
+                            <p>Together for Disaster Free Communities (TODFCO) is a not-for-profit Community-Based Organization operating in Kawempe Division, Kampala, Uganda. Established in 2023, TODFCO was founded in response to the recurring floods and increasing disaster risks affecting Bwaise Parish and surrounding communities.</p>
+                            <p>We work directly with community members to strengthen their capacity to understand disaster risks, reduce vulnerabilities, and respond effectively when disasters occur. Our approach emphasizes prevention, preparedness, and long-term resilience rather than emergency reaction.</p>
+                            <a href="about.html" class="cta-button hover-lift">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="intro-image animate-slideInRight">
+                            <img src="images/pexels-helen1-28447774.jpg" alt="Flooded Bwaise community and volunteers helping residents">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-              <h3>Emergency Response</h3>
-              <p>
-                Rapid response coordination and support during disasters to save
-                lives and protect property
-              </p>
+        </section>
+
+        <!-- Key Impact Statistics -->
+        <section class="impact-statistics">
+            <div class="container">
+                <div class="section-header animate-fadeIn">
+                    <h2>Our Impact</h2>
+                    <p>Making a measurable difference in community resilience</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stat-card hover-lift animate-scaleIn">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Families Reached</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card hover-lift animate-scaleIn" style="animation-delay: 0.1s">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Community Volunteers</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card hover-lift animate-scaleIn" style="animation-delay: 0.2s">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Training Workshops</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card hover-lift animate-scaleIn" style="animation-delay: 0.3s">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years of Community Action</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-              <h3>Community Resilience</h3>
-              <p>
-                Building sustainable disaster-resilient communities through
-                education and resource mobilization
-              </p>
+        </section>
+
+        <!-- Our Approach -->
+        <section class="our-approach">
+            <div class="container">
+                <div class="section-header animate-fadeIn">
+                    <h2>Our Approach</h2>
+                    <p>Practical, community-led solutions for disaster resilience</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="approach-card hover-lift animate-fadeInUp" style="animation-delay: 0.1s">
+                            <div class="approach-icon">
+                                <span>🚰</span>
+                            </div>
+                            <h3>Community Drainage Improvement</h3>
+                            <p>Monthly drainage clearing campaigns to remove plastic waste, silt, and debris blocking water channels.</p>
+                            <img src="images/pexels-dibakar-roy-2432543-26202074.jpg" alt="Drainage clearing">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="approach-card hover-lift animate-fadeInUp" style="animation-delay: 0.2s">
+                            <div class="approach-icon">
+                                <span>🏠</span>
+                            </div>
+                            <h3>Household Flood Protection</h3>
+                            <p>Raising doorsteps, using sandbags, elevating household items, and improving rainwater diversion.</p>
+                            <img src="images/pexels-helen1-28447761.jpg" alt="Flood protection measures">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="approach-card hover-lift animate-fadeInUp" style="animation-delay: 0.3s">
+                            <div class="approach-icon">
+                                <span>🚨</span>
+                            </div>
+                            <h3>Early Warning Systems</h3>
+                            <p>Localized early warning using mobile networks, notice boards, and community leaders for timely alerts.</p>
+                            <img src="images/pexels-helen1-28447774.jpg" alt="Community meeting">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="approach-card hover-lift animate-fadeInUp" style="animation-delay: 0.4s">
+                            <div class="approach-icon">
+                                <span>🎓</span>
+                            </div>
+                            <h3>Disaster Preparedness Training</h3>
+                            <p>Regular workshops on flood risk mapping, evacuation procedures, first aid, and emergency response.</p>
+                            <img src="images/pexels-magda-ehlers-pexels-14562092.jpg" alt="Training workshop">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-              <h3>Early Warning Systems</h3>
-              <p>
-                Implementing effective communication channels for disaster
-                alerts and warnings
-              </p>
+        </section>
+
+        <!-- Featured Programs -->
+        <section class="featured-programs">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Programs</h2>
+                    <p>Comprehensive solutions for disaster resilience</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="images/pexels-dibakar-roy-2432543-26202074.jpg" alt="Disaster Risk Reduction">
+                            </div>
+                            <div class="program-content">
+                                <h3>Disaster Risk Reduction</h3>
+                                <p>Structured community education on disaster risk identification, risk mapping, and preparedness planning.</p>
+                                <a href="services.html" class="program-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="images/pexels-helen1-28447761.jpg" alt="Flood Preparedness">
+                            </div>
+                            <div class="program-content">
+                                <h3>Flood Preparedness</h3>
+                                <p>Strengthening household-level preparedness and community-based response mechanisms for flood emergencies.</p>
+                                <a href="services.html" class="program-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="images/pexels-helen1-28447774.jpg" alt="Climate Protection">
+                            </div>
+                            <div class="program-content">
+                                <h3>Climate Protection</h3>
+                                <p>Environmental awareness and climate adaptation strategies to reduce disaster vulnerability.</p>
+                                <a href="services.html" class="program-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="images/pexels-magda-ehlers-pexels-14562092.jpg" alt="Community Capacity Building">
+                            </div>
+                            <div class="program-content">
+                                <h3>Community Capacity Building</h3>
+                                <p>Training youth volunteers, engaging community leaders, and equipping households with disaster preparedness skills.</p>
+                                <a href="services.html" class="program-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-              <h3>Vulnerable Support</h3>
-              <p>
-                Specialized support for affected groups including relief
-                distribution and shelter management
-              </p>
+        </section>
+
+        <!-- How We Work -->
+        <section class="how-we-work">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How We Work</h2>
+                    <p>Our systematic approach to building disaster resilience</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-number">1</div>
+                            <h3>Community Awareness</h3>
+                            <p>Educating communities about disaster risks and prevention strategies through workshops and outreach.</p>
+                            <img src="images/pexels-helen1-28447761.jpg" alt="Training workshop">
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-number">2</div>
+                            <h3>Risk Mapping</h3>
+                            <p>Identifying and mapping high-risk areas to prioritize interventions and allocate resources effectively.</p>
+                            <img src="images/pexels-helen1-28447774.jpg" alt="Community meeting">
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-number">3</div>
+                            <h3>Training</h3>
+                            <p>Building local capacity through disaster preparedness training, emergency response drills, and skill development.</p>
+                            <img src="images/pexels-magda-ehlers-pexels-14562092.jpg" alt="Volunteers training">
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-number">4</div>
+                            <h3>Emergency Response</h3>
+                            <p>Rapid mobilization of volunteers and resources to assist affected communities during disaster events.</p>
+                            <img src="images/pexels-dibakar-roy-2432543-26202074.jpg" alt="Flood response">
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-number">5</div>
+                            <h3>Recovery</h3>
+                            <p>Supporting communities to rebuild and recover while strengthening resilience for future disasters.</p>
+                            <img src="images/pexels-helen1-28447761.jpg" alt="Community recovery">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-              <h3>Partnership Coordination</h3>
-              <p>
-                Working with government, NGOs, and stakeholders for
-                comprehensive disaster management
-              </p>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="photo-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Photo Gallery</h2>
+                    <p>Visual stories of our community resilience work</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/pexels-dibakar-roy-2432543-26202074.jpg" alt="Flooding">
+                        <div class="gallery-overlay">
+                            <span>Flooding Response</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-helen1-28447761.jpg" alt="Volunteers">
+                        <div class="gallery-overlay">
+                            <span>Volunteers in Action</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-helen1-28447774.jpg" alt="Drainage cleaning">
+                        <div class="gallery-overlay">
+                            <span>Drainage Cleaning</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-magda-ehlers-pexels-14562092.jpg" alt="Community meetings">
+                        <div class="gallery-overlay">
+                            <span>Community Meetings</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-dibakar-roy-2432543-26202074.jpg" alt="Youth cleanups">
+                        <div class="gallery-overlay">
+                            <span>Youth Cleanups</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-helen1-28447761.jpg" alt="Flood response">
+                        <div class="gallery-overlay">
+                            <span>Flood Response</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-helen1-28447774.jpg" alt="Training">
+                        <div class="gallery-overlay">
+                            <span>Training Sessions</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-magda-ehlers-pexels-14562092.jpg" alt="Community support">
+                        <div class="gallery-overlay">
+                            <span>Community Support</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pexels-dibakar-roy-2432543-26202074.jpg" alt="Resilience building">
+                        <div class="gallery-overlay">
+                            <span>Resilience Building</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Community Voices</h2>
+                    <p>Stories from those we've helped and worked with</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"TODFCO helped our community reduce flooding through drainage clearing. Now when it rains heavily, the water recedes much faster and our homes stay safer."</p>
+                            <div class="testimonial-author">
+                                <img src="images/WhatsApp Image 2026-02-24 at 9.16.14 PM.jpeg" alt="Resident">
+                                <div class="author-info">
+                                    <h4>Sarah Nalwoga</h4>
+                                    <p>Bwaise Resident</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"The disaster preparedness training gave me confidence. Now I know what to do when floods come, and I can help my neighbors too."</p>
+                            <div class="testimonial-author">
+                                <img src="images/WhatsApp Image 2026-02-24 at 9.16.14 PM.jpeg" alt="Volunteer">
+                                <div class="author-info">
+                                    <h4>James Mugisha</h4>
+                                    <p>Community Volunteer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"TODFCO's approach of working with the community rather than for us has made all the difference. We own the solutions now."</p>
+                            <div class="testimonial-author">
+                                <img src="images/WhatsApp Image 2026-02-24 at 9.16.14 PM.jpeg" alt="Community leader">
+                                <div class="author-info">
+                                    <h4>Joseph Ssebadduka</h4>
+                                    <p>Community Leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Partners</h2>
+                    <p>Working together for disaster resilient communities</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <span>KCCA</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <span>NGO Partners</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <span>Community Groups</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <span>Local Leaders</span>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <span>Donors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="call-to-action">
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+                <h2>Join Us in Building Disaster Resilient Communities</h2>
+                <p>Together, we can create safer, stronger communities prepared for any disaster</p>
+                <div class="cta-buttons">
+                    <a href="volunteer.html" class="cta-button primary">Become Volunteer</a>
+                    <a href="donate.html" class="cta-button secondary">Donate</a>
+                    <a href="contact.html" class="cta-button secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
