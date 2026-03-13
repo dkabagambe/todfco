@@ -302,6 +302,9 @@ class GalleryLightbox {
         this.lightboxDate = document.getElementById('lightbox-date');
         this.currentImageSpan = document.getElementById('current-image');
         this.totalImagesSpan = document.getElementById('total-images');
+        this.prevBtn = document.querySelector('.lightbox-prev');
+        this.nextBtn = document.querySelector('.lightbox-next');
+        this.closeBtn = document.querySelector('.lightbox-close');
         this.loading = document.querySelector('.lightbox-loading');
         
         this.currentIndex = 0;
@@ -315,7 +318,10 @@ class GalleryLightbox {
         // Collect all gallery items
         this.galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
         
-        if (this.galleryItems.length === 0) return;
+        if (this.galleryItems.length === 0) {
+            console.log('No gallery items found');
+            return;
+        }
         
         // Update total images counter
         this.totalImagesSpan.textContent = this.galleryItems.length;
@@ -325,79 +331,63 @@ class GalleryLightbox {
             item.style.cursor = 'pointer';
             item.addEventListener('click', (e) => {
                 e.preventDefault();
-                this.openLightbox(index);
+                e.stopPropagation();
+                this.currentIndex = index;
+                this.openLightbox();
             });
         });
         
         // Close button handler
-        const closeBtn = document.querySelector('.lightbox-close');
-        if (closeBtn) {
-            closeBtn.addEventListener('click', () => this.closeLightbox());
-        }
+        this.closeBtn.addEventListener('click', () => {
+            this.closeLightbox();
+        });
         
         // Overlay click to close
-        const overlay = document.querySelector('.lightbox-overlay');
-        if (overlay) {
-            overlay.addEventListener('click', () => this.closeLightbox());
-        }
+        this.lightbox.addEventListener('click', (e) => {
+            if (e.target === this.lightbox || e.target.classList.contains('lightbox-overlay')) {
+                this.closeLightbox();
+            }
+        });
         
         // Navigation handlers
-        const prevBtn = document.querySelector('.lightbox-prev');
-        const nextBtn = document.querySelector('.lightbox-next');
+        this.prevBtn.addEventListener('click', () => {
+            this.navigate(-1);
+        });
         
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => this.navigateImage(-1));
-        }
-        
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => this.navigateImage(1));
-        }
+        this.nextBtn.addEventListener('click', () => {
+            this.navigate(1);
+        });
         
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (!this.isOpen) return;
             
-            switch(e.key) {
-                case 'Escape':
-                    this.closeLightbox();
-                    break;
-                case 'ArrowLeft':
-                    this.navigateImage(-1);
-                    break;
-                case 'ArrowRight':
-                    this.navigateImage(1);
-                    break;
+            if (e.key === 'Escape') {
+                this.closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                this.navigate(-1);
+            } else if (e.key === 'ArrowRight') {
+                this.navigate(1);
             }
         });
         
-        // Touch/swipe support for mobile
-        this.initTouchSupport();
+        console.log('Gallery lightbox initialized with', this.galleryItems.length, 'items');
+        
+        // Setup touch gestures for mobile
+        this.setupTouchGestures();
     }
     
-    openLightbox(index) {
-        this.currentIndex = index;
+    openLightbox() {
         this.isOpen = true;
-        
-        // Show lightbox
         this.lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
-        
-        // Load image
-        this.loadImage(index);
+        this.loadImage(this.currentIndex);
     }
     
     closeLightbox() {
         this.isOpen = false;
-        
-        // Hide lightbox
         this.lightbox.classList.remove('active');
         document.body.style.overflow = '';
-        
-        // Reset image
-        setTimeout(() => {
-            this.lightboxImage.src = '';
-            this.lightboxImage.alt = '';
-        }, 300);
     }
     
     loadImage(index) {
@@ -405,9 +395,9 @@ class GalleryLightbox {
         if (!item) return;
         
         // Show loading
-        this.loading.classList.add('active');
+        this.loading.style.display = 'block';
+        this.lightboxImage.style.opacity = '0';
         
-        // Get image and info
         const img = item.querySelector('img');
         const title = item.querySelector('h3')?.textContent || '';
         const description = item.querySelector('p')?.textContent || '';
@@ -416,30 +406,26 @@ class GalleryLightbox {
         // Create new image to preload
         const newImg = new Image();
         newImg.onload = () => {
-            // Update lightbox content
-            this.lightboxImage.src = img.src;
-            this.lightboxImage.alt = img.alt;
+            this.lightboxImage.src = newImg.src;
             this.lightboxTitle.textContent = title;
             this.lightboxDescription.textContent = description;
             this.lightboxDate.textContent = date;
             this.currentImageSpan.textContent = index + 1;
             
-            // Hide loading
-            this.loading.classList.remove('active');
+            // Hide loading, show image
+            this.loading.style.display = 'none';
+            this.lightboxImage.style.opacity = '1';
         };
         
         newImg.onerror = () => {
-            // Hide loading even on error
-            this.loading.classList.remove('active');
             console.error('Failed to load image:', img.src);
+            this.loading.style.display = 'none';
         };
         
         newImg.src = img.src;
     }
     
-    navigateImage(direction) {
-        if (!this.isOpen) return;
-        
+    navigate(direction) {
         this.currentIndex += direction;
         
         // Wrap around
@@ -452,11 +438,13 @@ class GalleryLightbox {
         this.loadImage(this.currentIndex);
     }
     
-    initTouchSupport() {
+    // Touch gesture support
+    setupTouchGestures() {
         let touchStartX = 0;
         let touchEndX = 0;
         
         const handleTouchStart = (e) => {
+            if (!this.isOpen) return;
             touchStartX = e.changedTouches[0].screenX;
         };
         
@@ -470,10 +458,10 @@ class GalleryLightbox {
             if (Math.abs(swipeDistance) > 50) {
                 if (swipeDistance > 0) {
                     // Swipe right - previous image
-                    this.navigateImage(-1);
+                    this.navigate(-1);
                 } else {
                     // Swipe left - next image
-                    this.navigateImage(1);
+                    this.navigate(1);
                 }
             }
         };
