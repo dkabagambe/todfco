@@ -1000,6 +1000,17 @@ section {
     padding: 1.5rem 3rem;
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    margin-right: 4rem;
+    position: relative;
+    z-index: 10;
 }
 
 .logo img {
@@ -1009,17 +1020,35 @@ section {
     object-fit: cover;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    background: white;
 }
 
 .logo img:hover {
     transform: scale(1.05) rotate(5deg);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-color: #2563eb;
+}
+
+.logo::after {
+    content: 'TODFCO';
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 3rem;
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 .nav-link {
@@ -1062,6 +1091,106 @@ section {
 
 .nav-link.active::after {
     width: 80%;
+}
+
+/* Navigation Responsive */
+@media (max-width: 1200px) {
+    .nav-container {
+        padding: 1.5rem 2rem;
+    }
+    
+    .logo {
+        margin-right: 3rem;
+    }
+    
+    .logo::after {
+        font-size: 1.125rem;
+        left: 75px;
+    }
+    
+    .nav-menu {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-container {
+        padding: 1.25rem 2rem;
+    }
+    
+    .logo {
+        margin-right: 2.5rem;
+    }
+    
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .logo::after {
+        font-size: 1rem;
+        left: 65px;
+    }
+    
+    .nav-menu {
+        gap: 2rem;
+    }
+    
+    .nav-link {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem 1.5rem;
+    }
+    
+    .logo {
+        margin-right: 0;
+    }
+    
+    .logo img {
+        height: 45px;
+        width: 45px;
+        border: 2px solid rgba(255, 255, 255, 0.9);
+    }
+    
+    .logo::after {
+        font-size: 0.9rem;
+        left: 60px;
+    }
+    
+    .nav-menu {
+        display: none; /* Hide desktop menu on mobile */
+    }
+    
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 1rem;
+    }
+    
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .logo::after {
+        font-size: 0.8rem;
+        left: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo::after {
+        display: none; /* Hide text on very small screens */
+    }
 }
 
 /* Enhanced Buttons */
