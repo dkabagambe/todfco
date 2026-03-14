@@ -289,6 +289,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // FAQ accordion (resources page)
+    document.querySelectorAll('.faq-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const faqItem = header.closest('.faq-item');
+            const wasActive = faqItem.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+            if (!wasActive) faqItem.classList.add('active');
+        });
+    });
+
     console.log('TODFCO Website Initialized Successfully! 🚀');
 });
 
