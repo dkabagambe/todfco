@@ -3795,23 +3795,7 @@ body {
   }
 
   .footer-bottom-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .footer-bottom-links {
-    gap: 1rem;
     justify-content: center;
-    text-align: center;
-  }
-
-  .footer-bottom-links a {
-    text-align: center;
-  }
-
-  .certification p {
     text-align: center;
   }
 
@@ -3865,11 +3849,6 @@ body {
   .social-link svg {
     width: 18px;
     height: 18px;
-  }
-
-  .footer-bottom-links {
-    flex-direction: column;
-    gap: 0.5rem;
   }
 
   .contact-info {
@@ -6811,50 +6790,25 @@ div img:not([class]):not([alt=""]) {
 
 .footer-bottom {
   background: rgba(0, 0, 0, 0.3);
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   margin-top: 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 3rem;
-  flex-wrap: wrap;
-  gap: 2rem;
+  padding: 0 2rem;
 }
 
-.copyright p {
+.footer-bottom .copyright {
   font-size: 0.875rem;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.8);
   margin: 0;
-}
-
-.footer-bottom-links {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.footer-bottom-links a {
-  color: #64748b;
-  text-decoration: none;
-  font-size: 0.875rem;
-  transition: color 0.3s ease;
-}
-
-.footer-bottom-links a:hover {
-  color: #2563eb;
-}
-
-.certification p {
-  font-size: 0.875rem;
-  color: #64748b;
-  margin: 0;
-  text-align: right;
+  text-align: center;
 }
 
 /* Footer Responsive */
@@ -6888,17 +6842,8 @@ div img:not([class]):not([alt=""]) {
   }
 
   .footer-bottom-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .footer-bottom-links {
-    gap: 1rem;
-  }
-
-  .certification p {
-    text-align: left;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -6946,10 +6891,6 @@ div img:not([class]):not([alt=""]) {
     height: 18px;
   }
 
-  .footer-bottom-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
 
 /* Responsive adjustments */
