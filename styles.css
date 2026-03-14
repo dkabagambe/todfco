@@ -4249,10 +4249,10 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.1rem;
     transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
-    padding: 5rem 1rem 2rem;
+    padding: 5rem 1rem 1.5rem;
     box-sizing: border-box;
     overflow-y: auto;
   }
@@ -4266,7 +4266,7 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.75rem;
     border-radius: 12px;
     transition: all 0.3s ease;
     animation: slideInRight 0.5s ease-out;
@@ -4351,12 +4351,12 @@ body {
 /* Mobile menu – phones only, compact to fit all items */
 @media (max-width: 480px) {
   .nav-menu {
-    gap: 0.15rem;
+    gap: 0.05rem;
     padding: 4rem 0.5rem 1rem;
   }
   .nav-link {
-    font-size: 0.8rem;
-    padding: 0.35rem;
+    font-size: 0.875rem;
+    padding: 0.3rem 0.6rem;
   }
 }
 
