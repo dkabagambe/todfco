@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Close menu when clicking on links
-        document.querySelectorAll('.nav-link').forEach(link => {
+        document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gallery lightbox effect
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.createElement('div');
-    lightbox.className = 'lightbox';
+    lightbox.className = 'gallery-lightbox';
     lightbox.innerHTML = '<div class="lightbox-content"><img src="" alt=""><button class="lightbox-close">&times;</button></div>';
     document.body.appendChild(lightbox);
 
