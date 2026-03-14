@@ -3763,6 +3763,11 @@ body {
 
   .footer-links {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
   }
 
   .footer-links li {
@@ -3775,18 +3780,30 @@ body {
 
   .contact-info {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-item {
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-icon {
+    margin: 0 auto;
   }
 
   .contact-details {
     text-align: center;
   }
 
-  .contact-details p {
+  .contact-details p,
+  .contact-details a {
     text-align: center;
   }
 
@@ -6333,9 +6350,9 @@ div img:not([class]):not([alt=""]) {
     ) !important;
     backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: 2rem;
+    padding: 5rem 1rem 1.5rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    gap: 1.5rem;
+    gap: 0.1rem;
   }
 
   .nav-menu.active {
