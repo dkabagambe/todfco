@@ -1314,7 +1314,7 @@ main .section-header p {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.3rem;
   margin-left: auto;
   flex-shrink: 0;
   flex-wrap: nowrap;
@@ -1323,7 +1323,7 @@ main .section-header p {
 .nav-link {
   text-decoration: none;
   color: #1e293b;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   position: relative;
@@ -1360,28 +1360,6 @@ main .section-header p {
 
 .nav-link.active::after {
   width: 100%;
-}
-
-.nav-cta {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.nav-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
-  background: linear-gradient(135deg, #1d4ed8, #2563eb);
 }
 
 .hamburger {
@@ -1822,11 +1800,6 @@ body {
   .nav-link {
     font-size: 0.85rem;
   }
-
-  .nav-cta {
-    font-size: 0.8rem;
-    padding: 0.6rem 1.2rem;
-  }
 }
 
 @media (max-width: 992px) {
@@ -1855,11 +1828,6 @@ body {
   .nav-link {
     font-size: 0.8rem;
     padding: 0.4rem 0;
-  }
-
-  .nav-cta {
-    font-size: 0.75rem;
-    padding: 0.5rem 1rem;
   }
 
   /* Hero Slider Responsive */
@@ -2231,9 +2199,7 @@ body {
 /* Hero Sections for All Pages */
 .about-hero {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-helen1-28447761.jpg");
+  background: url("images/pexels-helen1-28447761.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2247,9 +2213,7 @@ body {
 
 .services-hero {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-magda-ehlers-pexels-14562092.jpg");
+  background: url("images/pexels-magda-ehlers-pexels-14562092.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2263,9 +2227,7 @@ body {
 
 .contact-hero {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-dibakar-roy-2432543-26202074.jpg");
+  background: url("images/pexels-dibakar-roy-2432543-26202074.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2279,9 +2241,7 @@ body {
 
 .volunteer-hero {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-helen1-28447774.jpg");
+  background: url("images/pexels-helen1-28447774.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2295,9 +2255,7 @@ body {
 
 .donate-hero {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-helen1-28447761.jpg");
+  background: url("images/pexels-helen1-28447761.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2311,9 +2269,7 @@ body {
 
 .blog-hero {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-magda-ehlers-pexels-14562092.jpg");
+  background: url("images/pexels-magda-ehlers-pexels-14562092.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2480,11 +2436,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(37, 99, 235, 0.8),
-    rgba(16, 185, 129, 0.8)
-  );
+  background: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
@@ -4373,14 +4325,6 @@ body {
     display: none;
   }
 
-  .nav-cta {
-    margin-top: 0.25rem;
-    padding: 0.5rem 1rem !important;
-    font-size: 0.9rem !important;
-    text-align: center;
-    display: block;
-  }
-
   /* Mobile close handled by hamburger only - no duplicate X */
 
   /* Menu Header - TODFCO label removed */
@@ -4449,10 +4393,6 @@ body {
     font-size: 0.8rem;
     padding: 0.35rem;
   }
-  .nav-cta {
-    font-size: 0.8rem !important;
-    padding: 0.35rem 0.6rem !important;
-  }
 }
 
 @media (max-width: 360px) {
@@ -4463,10 +4403,6 @@ body {
   .nav-link {
     font-size: 0.75rem;
     padding: 0.3rem 0.5rem;
-  }
-  .nav-cta {
-    font-size: 0.75rem !important;
-    padding: 0.3rem 0.5rem !important;
   }
 }
 
@@ -5900,8 +5836,7 @@ div img:not([class]):not([alt=""]) {
     display: flex;
   }
 
-  .nav-menu .nav-link,
-  .nav-menu .nav-cta {
+  .nav-menu .nav-link {
     color: #ffffff !important;
   }
 
