@@ -2566,6 +2566,516 @@ body {
   }
 }
 
+/* Gender and Flood Resilience */
+.gender-resilience {
+  padding: 1rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.gender-resilience::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.08) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(40px);
+}
+
+.gender-resilience::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(16, 185, 129, 0.06) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(40px);
+}
+
+.gender-resilience .row {
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Badge */
+.gender-badge {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #0369a1;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+  transition: all 0.3s ease;
+}
+
+.gender-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
+}
+
+/* Content Wrapper */
+.gender-content-wrapper {
+  padding-right: 2rem;
+}
+
+.gender-resilience-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.gender-intro {
+  font-size: 1.125rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Highlights Grid */
+.gender-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.75rem;
+  background: white;
+  border-radius: 18px;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 4px 16px rgba(0, 0, 0, 0.02);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 5px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(248, 250, 252, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+  pointer-events: none;
+}
+
+.highlight-item:hover {
+  border-left-color: #2563eb;
+  box-shadow:
+    0 12px 35px rgba(37, 99, 235, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.05);
+  transform: translateX(8px) translateY(-2px);
+}
+
+.highlight-item:nth-child(2):hover {
+  border-left-color: #10b981;
+  box-shadow:
+    0 12px 35px rgba(16, 185, 129, 0.12),
+    0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-item:nth-child(3):hover {
+  border-left-color: #f59e0b;
+  box-shadow:
+    0 12px 35px rgba(245, 158, 11, 0.12),
+    0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-icon {
+  font-size: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.12),
+    rgba(16, 185, 129, 0.12)
+  );
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.35s ease;
+}
+
+.highlight-item:hover .highlight-icon {
+  transform: scale(1.08) rotate(5deg);
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.18),
+    rgba(16, 185, 129, 0.18)
+  );
+}
+
+.highlight-item:nth-child(2) .highlight-icon {
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.12),
+    rgba(245, 158, 11, 0.12)
+  );
+}
+
+.highlight-item:nth-child(2):hover .highlight-icon {
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.18),
+    rgba(245, 158, 11, 0.18)
+  );
+}
+
+.highlight-item:nth-child(3) .highlight-icon {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.12),
+    rgba(37, 99, 235, 0.12)
+  );
+}
+
+.highlight-item:nth-child(3):hover .highlight-icon {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.18),
+    rgba(37, 99, 235, 0.18)
+  );
+}
+
+.highlight-text {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-text h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.highlight-text p {
+  font-size: 0.975rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Visual Wrapper */
+.gender-visual-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gender-accent-box {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+}
+
+.gender-accent-box::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: linear-gradient(135deg, #2563eb, #10b981, #2563eb);
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+  border-radius: 28px;
+  z-index: 0;
+  filter: blur(8px);
+}
+
+.accent-content {
+  position: relative;
+  background: white;
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow:
+    0 30px 60px rgba(37, 99, 235, 0.12),
+    0 10px 25px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.accent-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #10b981);
+}
+
+.accent-content h3 {
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.accent-content p {
+  font-size: 1.025rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* Commitment Stats */
+.commitment-stats {
+  display: flex;
+  gap: 2.5rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #2563eb, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.stat-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .gender-content-wrapper {
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .gender-resilience-title {
+    font-size: 2.3rem;
+  }
+
+  .gender-intro {
+    font-size: 1.15rem;
+  }
+
+  .gender-visual-wrapper {
+    justify-content: center;
+  }
+
+  .gender-accent-box {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gender-resilience {
+    padding: 3.5rem 0;
+  }
+
+  .gender-resilience::before {
+    width: 350px;
+    height: 350px;
+    right: 0%;
+    top: -15%;
+  }
+
+  .gender-resilience::after {
+    width: 250px;
+    height: 250px;
+    left: -5%;
+    bottom: -10%;
+  }
+
+  .gender-resilience-title {
+    font-size: 2rem;
+  }
+
+  .gender-intro {
+    font-size: 1.05rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .highlight-item {
+    padding: 1.5rem;
+    gap: 1.2rem;
+    border-left-width: 4px;
+  }
+
+  .highlight-item:hover {
+    transform: translateX(6px) translateY(-1px);
+  }
+
+  .highlight-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+
+  .highlight-text h4 {
+    font-size: 1.1rem;
+  }
+
+  .highlight-text p {
+    font-size: 0.95rem;
+  }
+
+  .gender-accent-box {
+    max-width: 100%;
+  }
+
+  .accent-content {
+    padding: 2.25rem;
+  }
+
+  .accent-content h3 {
+    font-size: 1.45rem;
+    margin-bottom: 1rem;
+  }
+
+  .accent-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .commitment-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gender-resilience {
+    padding: 2.5rem 0;
+  }
+
+  .gender-badge {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .gender-resilience-title {
+    font-size: 1.65rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .gender-intro {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gender-highlights {
+    gap: 1rem;
+  }
+
+  .highlight-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .highlight-item:hover {
+    transform: translateX(4px) translateY(-1px);
+  }
+
+  .highlight-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2.25rem;
+  }
+
+  .highlight-text h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .highlight-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .accent-content {
+    padding: 1.75rem;
+  }
+
+  .accent-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .accent-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .commitment-stats {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-top: 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.75rem;
+  }
+
+  .stat-text {
+    font-size: 0.75rem;
+  }
+}
+
 /* Impact Statistics */
 .impact-statistics {
   padding: 6rem 0;
