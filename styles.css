@@ -1741,6 +1741,7 @@ body {
 #home .swiper,
 .swiper-container {
   margin-top: -80px;
+  margin-bottom: -90px;
 }
 
 @media (max-width: 768px) {
@@ -5728,6 +5729,63 @@ select:focus {
   overflow: hidden;
   margin-top: 92px;
   background: #0f172a;
+}
+
+/* Site Name Highlight under slider */
+.site-name-highlight {
+  background: linear-gradient(135deg, #0b1120, #020617);
+  color: #e5f2ff;
+  padding: 0.5rem 1rem;
+
+  text-align: center;
+}
+
+.site-name-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.site-name-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: #f9fafb;
+}
+
+.site-name-tagline {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #25d366;
+}
+
+@media (max-width: 768px) {
+  .site-name-highlight {
+    padding: 2rem 1.25rem;
+  }
+
+  .site-name-title {
+    font-size: 1.65rem;
+  }
+
+  .site-name-tagline {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-name-highlight {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .site-name-title {
+    font-size: 1.45rem;
+  }
+
+  .site-name-tagline {
+    font-size: 0.95rem;
+  }
 }
 
 .swiper {
