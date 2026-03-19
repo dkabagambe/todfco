@@ -2732,8 +2732,8 @@ body {
 .blog-hero .hero-content h1,
 .gallery-hero .hero-content h1,
 .resources-hero .hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: white;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -2748,11 +2748,13 @@ body {
 .blog-hero .hero-content p,
 .gallery-hero .hero-content p,
 .resources-hero .hero-content p {
-  font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   margin-bottom: 2.5rem;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem !important;
+  margin-bottom: 35px !important;
+  line-height: 1.6 !important;
+  font-weight: 600;
 }
 
 /* Hero Responsive */
@@ -6679,9 +6681,11 @@ select:focus {
 }
 
 .site-name-tagline {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #25d366;
+  font-size: 1.3rem !important;
+  margin-bottom: 35px !important;
+  line-height: 1.6 !important;
+  color: #06f8a7;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -6694,7 +6698,7 @@ select:focus {
   }
 
   .site-name-tagline {
-    font-size: 0.98rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -8229,6 +8233,12 @@ body.inner-page .member-bio {
 body.inner-page section p:last-child,
 body.inner-page .member-bio:last-of-type {
   margin-bottom: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 /* Consistent accent colors across inner pages */
@@ -9299,7 +9309,9 @@ body.inner-page .section-header {
   .blog-hero .hero-content h1,
   .gallery-hero .hero-content h1,
   .resources-hero .hero-content h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 1.6 !important;
+    font-weight: 600;
   }
 
   .category-tabs {
