@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
   color: #0f172a;
   overflow-x: hidden;
-  background: #ffffff;
+  background: #fff;
   font-weight: 400;
   font-optical-sizing: auto;
 }
@@ -2977,6 +2977,7 @@ body {
   padding: 1rem 0;
   position: relative;
   overflow: hidden;
+  background: inherit !important;
 }
 
 .gender-resilience::before {
@@ -2986,14 +2987,9 @@ body {
   right: -5%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(37, 99, 235, 0.08) 0%,
-    transparent 70%
-  );
+
   border-radius: 50%;
   z-index: 0;
-  filter: blur(40px);
 }
 
 .gender-resilience::after {
@@ -3003,14 +2999,8 @@ body {
   left: -10%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(
-    circle,
-    rgba(16, 185, 129, 0.06) 0%,
-    transparent 70%
-  );
   border-radius: 50%;
   z-index: 0;
-  filter: blur(40px);
 }
 
 .gender-resilience .row {
@@ -7909,7 +7899,7 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-logo h3 {
-  color: white;
+  color: #f5f5f5 !important;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -7923,9 +7913,8 @@ div img:not([class]):not([alt=""]) {
   line-height: 1.5;
 }
 .footer-description p {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
   font-weight: 400;
   font-optical-sizing: auto;
   color: whitesmoke !important;
@@ -7971,10 +7960,12 @@ div img:not([class]):not([alt=""]) {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 0.9rem;
-  line-height: 1.5;
   position: relative;
   padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .footer-links a::before {
@@ -8025,9 +8016,10 @@ div img:not([class]):not([alt=""]) {
 .contact-details p,
 .contact-details a {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .contact-details a {
@@ -8193,10 +8185,14 @@ body.inner-page .section-header h2 {
 }
 
 body.inner-page .section-header p {
-  font-size: 1.125rem;
   color: #64748b;
-  line-height: 1.7;
   max-width: 640px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 body.inner-page section p,
@@ -8206,6 +8202,7 @@ body.inner-page .donation-method > p,
 body.inner-page .service-content p,
 body.inner-page .intro-content p,
 body.inner-page .accordion-content p,
+body.inner-page .accordion-content ul,
 body.inner-page .risk-item p,
 body.inner-page .flood-card p,
 body.inner-page .benefit-card p,
@@ -8213,8 +8210,10 @@ body.inner-page .opportunity-card p,
 body.inner-page .contact-card p,
 body.inner-page .guide-card p,
 body.inner-page .resource-card p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
+  font-weight: 400;
+  font-optical-sizing: auto;
   color: #475569;
 }
 
@@ -8234,7 +8233,7 @@ body.inner-page h4,
 body.inner-page .risk-item h4 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1e293b;
+  color: whitesmoke;
 }
 
 body.inner-page .intro-content h2 {
@@ -8252,7 +8251,6 @@ body.inner-page section p,
 body.inner-page .intro-content p,
 body.inner-page .member-bio {
   margin-bottom: 1rem;
-  font-family: "Cormorant Garamond", serif;
   font-size: 1.3rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -8263,7 +8261,6 @@ body.inner-page .member-bio {
 body.inner-page section p:last-child,
 body.inner-page .member-bio:last-of-type {
   margin-bottom: 0;
-  font-family: "Cormorant Garamond", serif;
   font-size: 1.3rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
