@@ -2795,12 +2795,10 @@ body {
 .gallery-hero .hero-content p,
 .resources-hero .hero-content p {
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-  font-size: 1.5rem !important;
-  margin-bottom: 5px !important;
-  line-height: 1.6 !important;
-  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 /* Hero Responsive */
@@ -9870,10 +9868,11 @@ body.inner-page .section-header {
 }
 
 .story-slide .story-content p {
-  font-size: 1rem;
   color: #475569;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .story-meta {
@@ -9884,8 +9883,11 @@ body.inner-page .section-header {
 }
 
 .story-meta span {
-  font-size: 0.875rem;
-  color: #64748b;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 500;
+  font-optical-sizing: auto;
+  color: #222;
 }
 
 .story-link {
@@ -9900,13 +9902,13 @@ body.inner-page .section-header {
 
 /* Video gallery */
 .video-gallery {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #f8fafc;
 }
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1.5rem;
 }
 
@@ -9968,8 +9970,11 @@ body.inner-page .section-header {
 }
 
 .video-meta span {
-  font-size: 0.8125rem;
-  color: #64748b;
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  font-weight: 700;
+  font-optical-sizing: auto;
 }
 
 /* Impact stats - gallery */
@@ -10006,9 +10011,11 @@ body.inner-page .section-header {
 }
 
 .impact-stats .stat-description {
-  font-size: 0.875rem;
   color: #64748b;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  font-optical-sizing: auto;
 }
 
 /* Photo submission */
@@ -10049,10 +10056,11 @@ body.inner-page .section-header {
 }
 
 .submission-guidelines li {
-  font-size: 0.9375rem;
   color: #475569;
-  line-height: 1.7;
-  margin-bottom: 0.5rem;
+   font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .submission-form {
