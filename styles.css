@@ -636,7 +636,6 @@ video {
 
 #home section {
   padding: 0 !important;
-  padding-top: -70px;
 }
 
 #home .slide-content h1 {
@@ -783,7 +782,7 @@ video {
 
 /* Professional Section Layouts */
 section {
-  padding: 6rem 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
@@ -2130,7 +2129,6 @@ main .section-header p {
 
 /* Prevent Content Overlap with Fixed Header */
 body {
-  padding-top: 80px;
   margin: 0;
 }
 
@@ -2143,7 +2141,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    padding-top: 70px;
+    padding-top: 0px;
   }
 
   #home .swiper-container,
