@@ -2201,7 +2201,7 @@ body {
 /* Hero Sections for All Pages */
 .about-hero {
   min-height: 100vh;
-  background: url("images/pexels-helen1-28447761.jpg");
+  background: url("images/sli1.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2215,7 +2215,7 @@ body {
 
 .services-hero {
   min-height: 100vh;
-  background: url("images/pexels-magda-ehlers-pexels-14562092.jpg");
+  background: url("images/sli2.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2229,7 +2229,7 @@ body {
 
 .contact-hero {
   min-height: 100vh;
-  background: url("images/pexels-dibakar-roy-2432543-26202074.jpg");
+  background: url("images/sli3.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2243,7 +2243,7 @@ body {
 
 .volunteer-hero {
   min-height: 100vh;
-  background: url("images/pexels-helen1-28447774.jpg");
+  background: url("images/sli4.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2257,7 +2257,7 @@ body {
 
 .donate-hero {
   min-height: 100vh;
-  background: url("images/pexels-helen1-28447761.jpg");
+  background: url("images/sli5.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2271,7 +2271,7 @@ body {
 
 .blog-hero {
   min-height: 100vh;
-  background: url("images/pexels-magda-ehlers-pexels-14562092.jpg");
+  background: url("images/sli1.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2287,7 +2287,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-dibakar-roy-2432543-26202074.jpg");
+    url("images/sli2.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2303,7 +2303,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/pexels-helen1-28447774.jpg");
+    url("images/sli3.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
