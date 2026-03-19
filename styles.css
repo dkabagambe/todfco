@@ -406,6 +406,40 @@ p:last-child {
   margin-bottom: 0;
 }
 
+/* List Styles */
+ul,
+ol {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #334155;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  margin-left: 2rem;
+}
+
+li {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #334155;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+ul li,
+ol li {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #334155;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
 /* Small text */
 small,
 .text-small {
@@ -2758,7 +2792,7 @@ body {
   line-height: 1.6;
   margin-bottom: 2.5rem;
   font-size: 1.5rem !important;
-  margin-bottom: 35px !important;
+  margin-bottom: 5px !important;
   line-height: 1.6 !important;
   font-weight: 600;
 }
@@ -4847,6 +4881,9 @@ body {
     font-weight: 600;
     color: #0f172a;
     text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-optical-sizing: auto;
   }
 
   .form-group input,
@@ -4856,7 +4893,9 @@ body {
     padding: 0.875rem;
     border: 2px solid #e2e8f0;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-optical-sizing: auto;
     transition: all 0.3s ease;
     background: white;
   }
@@ -4888,8 +4927,9 @@ body {
 
   .checkbox-group label {
     text-align: left;
-    line-height: 1.5;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-optical-sizing: auto;
     color: #64748b;
   }
 
@@ -8499,9 +8539,10 @@ body.inner-page .section-header {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #1e293b;
-  font-size: 0.9375rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .form-group input,
@@ -8511,7 +8552,9 @@ body.inner-page .section-header {
   padding: 0.875rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
   font-family: inherit;
   transition:
     border-color 0.2s,
@@ -9430,6 +9473,10 @@ body.inner-page .section-header {
 /* Volunteer opportunities */
 .volunteer-opportunities {
   background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .opportunity-card {
@@ -9478,19 +9525,24 @@ body.inner-page .section-header {
 }
 
 .opportunity-content > p {
-  font-size: 1rem;
   color: #475569;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #334155;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .opportunity-details {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
-  font-size: 0.875rem;
-  color: #64748b;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  color: #222;
 }
 
 .opportunity-details span::before {
@@ -9512,19 +9564,15 @@ body.inner-page .section-header {
 }
 
 .opportunity-tasks li {
-  font-size: 0.9375rem;
-  color: #475569;
-  padding: 0.5rem 0 0.5rem 1.5rem;
+  font-size: 1.3;
+  color: #475569 !important;
   position: relative;
-  line-height: 1.5;
-}
-
-.opportunity-tasks li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #10b981;
-  font-weight: 700;
+  line-height: 1.5 !important;
+  margin-bottom: 0.75rem !important;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  list-style-type: circle;
+  padding-left: 15px;
 }
 
 /* Volunteer requirements */
@@ -9532,8 +9580,12 @@ body.inner-page .section-header {
   background: #f8fafc;
 }
 
-.requirements-content .row {
+.requirements-content {
   gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .requirements-list {
@@ -9553,23 +9605,23 @@ body.inner-page .section-header {
 }
 
 .requirements-list ul {
-  list-style: none;
+  list-style: none !important;
   padding: 0;
   margin: 0;
 }
 
 .requirements-list li {
-  font-size: 1rem;
-  color: #475569;
-  padding: 0.6rem 0 0.6rem 1.75rem;
-  position: relative;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin: 0.5rem;
+  color: #334155;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .requirements-list li::before {
   content: "•";
-  position: absolute;
-  left: 0;
+  padding-right: 5px;
   color: #2563eb;
   font-weight: 700;
 }
@@ -9632,7 +9684,7 @@ body.inner-page .section-header {
 }
 
 .volunteer-form-section .volunteer-form {
-  background: white;
+  background: #cacaca;
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
