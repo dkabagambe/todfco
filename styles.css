@@ -438,7 +438,6 @@ a {
   transition: color 0.3s ease;
   font-optical-sizing: auto;
 }
-}
 
 a:hover {
   color: #1d4ed8;
@@ -640,10 +639,11 @@ video {
 }
 
 #home .slide-content h1 {
-  font-size: 3.8rem !important;
+  font-size: 3.4rem !important;
   margin-bottom: 20px !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
+  color: #fff;
 }
 
 #home .slide-content p {
@@ -652,6 +652,7 @@ video {
   line-height: 1.6 !important;
   opacity: 0.95 !important;
   max-width: 550px !important;
+  color: #10b981;
 }
 
 @media (max-width: 768px) {
