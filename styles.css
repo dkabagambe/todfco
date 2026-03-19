@@ -636,6 +636,7 @@ video {
 
 #home section {
   padding: 0 !important;
+  padding-top: -70px;
 }
 
 #home .slide-content h1 {
