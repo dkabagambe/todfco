@@ -1,3 +1,10 @@
+// Set dynamic copyright year
+document.addEventListener('DOMContentLoaded', function() {
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+});
 // Initialize Swiper Slider - Exactly like greenmaidcleaners.nl
 document.addEventListener("DOMContentLoaded", function () {
   // Swiper Configuration
@@ -583,10 +590,4 @@ $(document).ready(function () {
       },
     },
   });
-
-  // Set dynamic copyright year
-  const yearElement = document.getElementById("year");
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
 });
