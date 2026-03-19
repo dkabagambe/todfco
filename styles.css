@@ -555,7 +555,6 @@ video {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 0.75rem;
 }
 
 /* Professional Content Centering */
