@@ -721,6 +721,8 @@ video {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05em;
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
 /* Display headings using Cormorant Garamond */
@@ -915,7 +917,12 @@ section {
 
 .approach-card p {
   text-align: center;
-  line-height: 1.6;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
   color: #64748b;
 }
 
@@ -2898,10 +2905,13 @@ body {
 }
 
 .intro-content p {
-  font-size: 1.125rem;
   color: #475569;
-  margin-bottom: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
   line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .intro-image {
@@ -3598,10 +3608,13 @@ body {
 }
 
 .approach-card p {
-  font-size: 1rem;
   color: #64748b;
-  line-height: 1.6;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .approach-card img {
@@ -3680,10 +3693,12 @@ body {
 }
 
 .program-content p {
-  font-size: 1rem;
-  color: #64748b;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  color: #64748b;
 }
 
 .program-btn {
@@ -3801,10 +3816,11 @@ body {
 }
 
 .timeline-content p {
-  font-size: 1rem;
-  color: #64748b;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .timeline-content img {
@@ -7835,7 +7851,7 @@ div img:not([class]):not([alt=""]) {
 /* Enhanced Professional Footer */
 .footer {
   background: linear-gradient(135deg, #1e293b, #0f172a);
-  color: #ffffff;
+  color: whitesmoke !important;
   padding: 4rem 0 2rem;
   position: relative;
   overflow: hidden;
@@ -7900,12 +7916,20 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-logo p {
+  display: none;
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
   margin: 0;
   line-height: 1.5;
 }
-
+.footer-description p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  color: whitesmoke !important;
+}
 .social-links {
   display: flex;
   gap: 1rem;
@@ -8228,6 +8252,12 @@ body.inner-page section p,
 body.inner-page .intro-content p,
 body.inner-page .member-bio {
   margin-bottom: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 body.inner-page section p:last-child,
