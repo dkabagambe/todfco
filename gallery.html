@@ -1,574 +1,864 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery | TODFCO - Together for Disaster Free Communities</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="images/fav/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="images/fav/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="images/fav/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="images/fav/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="images/fav/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="images/fav/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="images/fav/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="images/fav/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="images/fav/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="images/fav/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png" />
-</head>
-<body class="inner-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Photo Gallery | TODFCO - Together for Disaster Free Communities
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/fav/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/fav/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/fav/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/fav/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/fav/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/fav/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/fav/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/fav/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/fav/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/fav/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/fav/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/fav/favicon-16x16.png"
+    />
+  </head>
+  <body class="inner-page">
     <!-- Header -->
     <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <a class="navbar-brand" href="index.html">
-                    <img
-                      src="images/logo-modified.png"
-                      alt="TODFCO Logo"
-                      class="logo"
-                      title="TODFCO"
-                    />
-                </a>
-                <div class="nav-menu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="volunteer.html" class="nav-link">Volunteer</a>
-                    <a href="donate.html" class="nav-link">Donate</a>
-                    <a href="blog.html" class="nav-link">Blog</a>
-                    <a href="gallery.html" class="nav-link active">Gallery</a>
-                    <a href="resources.html" class="nav-link">Resources</a>
-                </div>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
+      <nav class="nav">
+        <div class="nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo-modified.png"
+              alt="TODFCO Logo"
+              class="logo"
+              title="TODFCO"
+            />
+          </a>
+          <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="volunteer.html" class="nav-link">Volunteer</a>
+            <a href="donate.html" class="nav-link">Donate</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="gallery.html" class="nav-link active">Gallery</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Gallery Hero Section -->
     <section class="gallery-hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Our Gallery</h1>
-            <p>Visual stories of community resilience, disaster response, and the incredible work happening in Kawempe Division</p>
-        </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Our Gallery</h1>
+        <p>
+          Visual stories of community resilience, disaster response, and the
+          incredible work happening in Kawempe Division
+        </p>
+      </div>
     </section>
 
     <!-- Gallery Categories -->
     <section class="gallery-categories">
-        <div class="container">
-            <div class="category-tabs">
-                <button class="category-tab active" data-category="all">All Photos</button>
-                <button class="category-tab" data-category="flood-response">Flood Response</button>
-                <button class="category-tab" data-category="training">Training</button>
-                <button class="category-tab" data-category="volunteers">Volunteers</button>
-                <button class="category-tab" data-category="environment">Environment</button>
-                <button class="category-tab" data-category="community">Community</button>
-            </div>
+      <div class="container">
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">
+            All Photos
+          </button>
+          <button class="category-tab" data-category="flood-response">
+            Flood Response
+          </button>
+          <button class="category-tab" data-category="training">
+            Training
+          </button>
+          <button class="category-tab" data-category="volunteers">
+            Volunteers
+          </button>
+          <button class="category-tab" data-category="environment">
+            Environment
+          </button>
+          <button class="category-tab" data-category="community">
+            Community
+          </button>
         </div>
+      </div>
     </section>
 
     <!-- Main Gallery Grid -->
     <section class="main-gallery">
-        <div class="container">
-            <div class="gallery-grid">
-                <div class="gallery-item" data-category="flood-response">
-                    <img src="images/sli4.jpeg" alt="Flood response operations">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Emergency Flood Response</h3>
-                            <p>Volunteers assisting families during heavy flooding in Bwaise</p>
-                            <span class="gallery-date">March 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="volunteers">
-                    <img src="images/sli1.jpeg" alt="Volunteers in action">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Community Volunteers</h3>
-                            <p>Dedicated volunteers working together to protect their community</p>
-                            <span class="gallery-date">February 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="environment">
-                    <img src="images/sli2.jpeg" alt="Drainage cleaning">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Drainage Cleaning Campaign</h3>
-                            <p>Community members clearing blocked drainage channels to prevent flooding</p>
-                            <span class="gallery-date">February 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="training">
-                    <img src="images/sli3.jpeg" alt="Disaster preparedness training">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Disaster Preparedness Training</h3>
-                            <p>Community members learning essential emergency response skills</p>
-                            <span class="gallery-date">January 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="community">
-                    <img src="images/sli4.jpeg" alt="Community meeting">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Community Planning Meeting</h3>
-                            <p>Residents gathering to discuss disaster risk reduction strategies</p>
-                            <span class="gallery-date">January 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="flood-response">
-                    <img src="images/sli1.jpeg" alt="Flood relief distribution">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Relief Distribution</h3>
-                            <p>Distributing essential supplies to families affected by flooding</p>
-                            <span class="gallery-date">December 2025</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="volunteers">
-                    <img src="images/sli2.jpeg" alt="Youth volunteers">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Youth Environmental Champions</h3>
-                            <p>Young leaders taking action to protect their environment</p>
-                            <span class="gallery-date">December 2025</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="training">
-                    <img src="images/sli3.jpeg" alt="First aid training">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>First Aid Training</h3>
-                            <p>Volunteers learning life-saving skills for emergency situations</p>
-                            <span class="gallery-date">November 2025</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="environment">
-                    <img src="images/sli4.jpeg" alt="Tree planting">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Tree Planting Initiative</h3>
-                            <p>Community members planting trees to prevent soil erosion</p>
-                            <span class="gallery-date">November 2025</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="community">
-                    <img src="images/sli1.jpeg" alt="Community celebration">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Community Achievement Celebration</h3>
-                            <p>Celebrating successful completion of drainage projects</p>
-                            <span class="gallery-date">October 2025</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="flood-response">
-                    <img src="images/sli2.jpeg" alt="Evacuation exercise">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Evacuation Drill</h3>
-                            <p>Community practicing evacuation procedures during emergency drill</p>
-                            <span class="gallery-date">October 2025</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="volunteers">
-                    <img src="images/sli3.jpeg" alt="Volunteer recognition">
-                    <div class="gallery-overlay">
-                        <div class="overlay-content">
-                            <h3>Volunteer Recognition</h3>
-                            <p>Honoring outstanding volunteers for their dedication</p>
-                            <span class="gallery-date">September 2025</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="flood-response">
+            <video
+              class="hero-bg-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="images/sli4.jpeg"
+            >
+              <source
+                src="images/WhatsApp Video 2026-03-19 at 12.57.27 AM (2).mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Emergency Flood Response</h3>
+                <p>
+                  Volunteers assisting families during heavy flooding in Bwaise
+                </p>
+                <span class="gallery-date">March 2026</span>
+              </div>
             </div>
+          </div>
+
+          <div class="gallery-item" data-category="volunteers">
+            <img src="images/sli1.jpeg" alt="Volunteers in action" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Community Volunteers</h3>
+                <p>
+                  Dedicated volunteers working together to protect their
+                  community
+                </p>
+                <span class="gallery-date">February 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="environment">
+            <img src="images/sli2.jpeg" alt="Drainage cleaning" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Drainage Cleaning Campaign</h3>
+                <p>
+                  Community members clearing blocked drainage channels to
+                  prevent flooding
+                </p>
+                <span class="gallery-date">February 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="training">
+            <img src="images/sli3.jpeg" alt="Disaster preparedness training" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Disaster Preparedness Training</h3>
+                <p>
+                  Community members learning essential emergency response skills
+                </p>
+                <span class="gallery-date">January 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="community">
+            <img src="images/sli4.jpeg" alt="Community meeting" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Community Planning Meeting</h3>
+                <p>
+                  Residents gathering to discuss disaster risk reduction
+                  strategies
+                </p>
+                <span class="gallery-date">January 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="flood-response">
+            <img src="images/sli1.jpeg" alt="Flood relief distribution" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Relief Distribution</h3>
+                <p>
+                  Distributing essential supplies to families affected by
+                  flooding
+                </p>
+                <span class="gallery-date">December 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="volunteers">
+            <img src="images/sli2.jpeg" alt="Youth volunteers" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Youth Environmental Champions</h3>
+                <p>Young leaders taking action to protect their environment</p>
+                <span class="gallery-date">December 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="training">
+            <img src="images/sli3.jpeg" alt="First aid training" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>First Aid Training</h3>
+                <p>
+                  Volunteers learning life-saving skills for emergency
+                  situations
+                </p>
+                <span class="gallery-date">November 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="environment">
+            <img src="images/sli4.jpeg" alt="Tree planting" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Tree Planting Initiative</h3>
+                <p>Community members planting trees to prevent soil erosion</p>
+                <span class="gallery-date">November 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="community">
+            <img src="images/sli1.jpeg" alt="Community celebration" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Community Achievement Celebration</h3>
+                <p>Celebrating successful completion of drainage projects</p>
+                <span class="gallery-date">October 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="flood-response">
+            <img src="images/sli2.jpeg" alt="Evacuation exercise" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Evacuation Drill</h3>
+                <p>
+                  Community practicing evacuation procedures during emergency
+                  drill
+                </p>
+                <span class="gallery-date">October 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="volunteers">
+            <img src="images/sli3.jpeg" alt="Volunteer recognition" />
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Volunteer Recognition</h3>
+                <p>Honoring outstanding volunteers for their dedication</p>
+                <span class="gallery-date">September 2025</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Featured Stories -->
     <section class="featured-stories">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured Photo Stories</h2>
-                <p>Behind the scenes of our most impactful moments</p>
-            </div>
-            <div class="stories-slider">
-                <div class="story-slide">
-                    <div class="story-image">
-                        <img src="images/sli4.jpeg" alt="Major flood response operation">
-                    </div>
-                    <div class="story-content">
-                        <h3>The Great Flood of 2025: Community Response</h3>
-                        <p>When unprecedented rains hit Kawempe, our community response team mobilized over 200 volunteers to assist affected families. This photo series captures the courage and solidarity that defined our response.</p>
-                        <div class="story-meta">
-                            <span>📅 March 2025</span>
-                            <span>📸 15 photos</span>
-                            <span>👥 200+ volunteers</span>
-                        </div>
-                        <a href="#" class="story-link">View Full Story →</a>
-                    </div>
-                </div>
-
-                <div class="story-slide">
-                    <div class="story-image">
-                        <img src="images/sli1.jpeg" alt="Training program graduation">
-                    </div>
-                    <div class="story-content">
-                        <h3>From Training to Action: Volunteer Success Stories</h3>
-                        <p>Follow the journey of 50 community members who completed our disaster preparedness training and are now leading resilience efforts in their neighborhoods.</p>
-                        <div class="story-meta">
-                            <span>📅 February 2025</span>
-                            <span>📸 20 photos</span>
-                            <span>🎓 50 graduates</span>
-                        </div>
-                        <a href="#" class="story-link">View Full Story →</a>
-                    </div>
-                </div>
-
-                <div class="story-slide">
-                    <div class="story-image">
-                        <img src="images/sli2.jpeg" alt="Environmental transformation">
-                    </div>
-                    <div class="story-content">
-                        <h3>Environmental Transformation: Before and After</h3>
-                        <p>See how dedicated environmental action transformed flood-prone areas into resilient, green spaces. A testament to community power and persistence.</p>
-                        <div class="story-meta">
-                            <span>📅 January 2025</span>
-                            <span>📸 25 photos</span>
-                            <span>🌱 5 locations</span>
-                        </div>
-                        <a href="#" class="story-link">View Full Story →</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Photo Stories</h2>
+          <p>Behind the scenes of our most impactful moments</p>
         </div>
+        <div class="stories-slider">
+          <div class="story-slide">
+            <div class="story-image">
+              <img
+                src="images/sli4.jpeg"
+                alt="Major flood response operation"
+              />
+            </div>
+            <div class="story-content">
+              <h3>The Great Flood of 2025: Community Response</h3>
+              <p>
+                When unprecedented rains hit Kawempe, our community response
+                team mobilized over 200 volunteers to assist affected families.
+                This photo series captures the courage and solidarity that
+                defined our response.
+              </p>
+              <div class="story-meta">
+                <span>📅 March 2025</span>
+                <span>📸 15 photos</span>
+                <span>👥 200+ volunteers</span>
+              </div>
+              <a href="#" class="story-link">View Full Story →</a>
+            </div>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-image">
+              <img src="images/sli1.jpeg" alt="Training program graduation" />
+            </div>
+            <div class="story-content">
+              <h3>From Training to Action: Volunteer Success Stories</h3>
+              <p>
+                Follow the journey of 50 community members who completed our
+                disaster preparedness training and are now leading resilience
+                efforts in their neighborhoods.
+              </p>
+              <div class="story-meta">
+                <span>📅 February 2025</span>
+                <span>📸 20 photos</span>
+                <span>🎓 50 graduates</span>
+              </div>
+              <a href="#" class="story-link">View Full Story →</a>
+            </div>
+          </div>
+
+          <div class="story-slide">
+            <div class="story-image">
+              <img src="images/sli2.jpeg" alt="Environmental transformation" />
+            </div>
+            <div class="story-content">
+              <h3>Environmental Transformation: Before and After</h3>
+              <p>
+                See how dedicated environmental action transformed flood-prone
+                areas into resilient, green spaces. A testament to community
+                power and persistence.
+              </p>
+              <div class="story-meta">
+                <span>📅 January 2025</span>
+                <span>📸 25 photos</span>
+                <span>🌱 5 locations</span>
+              </div>
+              <a href="#" class="story-link">View Full Story →</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Video Gallery -->
     <section class="video-gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2>Video Gallery</h2>
-                <p>Watch our work in action through these powerful video stories</p>
-            </div>
-            <div class="video-grid">
-                <div class="video-item">
-                    <div class="video-thumbnail">
-                        <img src="images/sli4.jpeg" alt="Video thumbnail">
-                        <div class="play-button">
-                            <span>▶️</span>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Building Resilience: Our Story</h3>
-                        <p>A comprehensive look at TODFCO's mission and impact in Kawempe Division</p>
-                        <div class="video-meta">
-                            <span>⏱️ 12:45</span>
-                            <span>👁️ 2.3K views</span>
-                            <span>📅 March 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-thumbnail">
-                        <img src="images/sli1.jpeg" alt="Video thumbnail">
-                        <div class="play-button">
-                            <span>▶️</span>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Emergency Response: Real-Time Action</h3>
-                        <p>Experience the intensity and coordination of our emergency response operations</p>
-                        <div class="video-meta">
-                            <span>⏱️ 8:30</span>
-                            <span>👁️ 1.8K views</span>
-                            <span>📅 February 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-thumbnail">
-                        <img src="images/sli2.jpeg" alt="Video thumbnail">
-                        <div class="play-button">
-                            <span>▶️</span>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Community Voices: Testimonials</h3>
-                        <p>Hear directly from community members about the impact of our programs</p>
-                        <div class="video-meta">
-                            <span>⏱️ 6:15</span>
-                            <span>👁️ 1.2K views</span>
-                            <span>📅 January 2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Video Gallery</h2>
+          <p>Watch our work in action through these powerful video stories</p>
         </div>
+        <div class="video-grid">
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <img src="images/sli4.jpeg" alt="Video thumbnail" />
+              <div class="play-button">
+                <span>▶️</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Building Resilience: Our Story</h3>
+              <p>
+                A comprehensive look at TODFCO's mission and impact in Kawempe
+                Division
+              </p>
+              <div class="video-meta">
+                <span>⏱️ 12:45</span>
+                <span>👁️ 2.3K views</span>
+                <span>📅 March 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <img src="images/sli1.jpeg" alt="Video thumbnail" />
+              <div class="play-button">
+                <span>▶️</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Emergency Response: Real-Time Action</h3>
+              <p>
+                Experience the intensity and coordination of our emergency
+                response operations
+              </p>
+              <div class="video-meta">
+                <span>⏱️ 8:30</span>
+                <span>👁️ 1.8K views</span>
+                <span>📅 February 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <img src="images/sli2.jpeg" alt="Video thumbnail" />
+              <div class="play-button">
+                <span>▶️</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Community Voices: Testimonials</h3>
+              <p>
+                Hear directly from community members about the impact of our
+                programs
+              </p>
+              <div class="video-meta">
+                <span>⏱️ 6:15</span>
+                <span>👁️ 1.2K views</span>
+                <span>📅 January 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Impact Statistics -->
     <section class="impact-stats">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Impact in Numbers</h2>
-                <p>The measurable difference we're making together</p>
-            </div>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Families Reached</div>
-                    <div class="stat-description">Direct beneficiaries of our programs</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Active Volunteers</div>
-                    <div class="stat-description">Dedicated community changemakers</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">25</div>
-                    <div class="stat-label">Training Sessions</div>
-                    <div class="stat-description">Community capacity building programs</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">60%</div>
-                    <div class="stat-label">Flood Reduction</div>
-                    <div class="stat-description">Decrease in flood impact areas</div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Impact in Numbers</h2>
+          <p>The measurable difference we're making together</p>
         </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Families Reached</div>
+            <div class="stat-description">
+              Direct beneficiaries of our programs
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Active Volunteers</div>
+            <div class="stat-description">Dedicated community changemakers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">25</div>
+            <div class="stat-label">Training Sessions</div>
+            <div class="stat-description">
+              Community capacity building programs
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">60%</div>
+            <div class="stat-label">Flood Reduction</div>
+            <div class="stat-description">Decrease in flood impact areas</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Photo Submission -->
     <section class="photo-submission">
-        <div class="container">
-            <div class="submission-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="submission-info">
-                            <h3>Share Your Story</h3>
-                            <p>Have photos from our community activities? We'd love to see them! Share your images of disaster resilience, community action, or volunteer work.</p>
-                            <div class="submission-guidelines">
-                                <h4>Photo Guidelines:</h4>
-                                <ul>
-                                    <li>High resolution (minimum 1920x1080)</li>
-                                    <li>Clear, well-lit images</li>
-                                    <li>Focus on people and community action</li>
-                                    <li>Include photo context and location</li>
-                                    <li>Ensure you have permission from people in photos</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="submission-form">
-                            <h3>Submit Your Photos</h3>
-                            <form id="photoSubmissionForm">
-                                <div class="form-group">
-                                    <label for="submitter-name">Your Name *</label>
-                                    <input type="text" id="submitter-name" name="submitter-name" required placeholder="Your full name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="submitter-email">Email Address *</label>
-                                    <input type="email" id="submitter-email" name="submitter-email" required placeholder="your.email@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="photo-description">Photo Description *</label>
-                                    <textarea id="photo-description" name="photo-description" rows="3" required placeholder="Describe what's happening in the photo, when and where it was taken"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="photo-upload">Upload Photos *</label>
-                                    <input type="file" id="photo-upload" name="photo-upload" multiple accept="image/*" required>
-                                    <p class="upload-note">You can upload up to 5 photos at once</p>
-                                </div>
-                                <div class="form-group">
-                                    <div class="checkbox-group">
-                                        <input type="checkbox" id="photo-permission" name="photo-permission" required>
-                                        <label for="photo-permission">I have permission from all people visible in the photos and grant TODFCO permission to use these images.</label>
-                                    </div>
-                                </div>
-                                <button type="submit" class="cta-button">Submit Photos</button>
-                            </form>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="submission-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="submission-info">
+                <h3>Share Your Story</h3>
+                <p>
+                  Have photos from our community activities? We'd love to see
+                  them! Share your images of disaster resilience, community
+                  action, or volunteer work.
+                </p>
+                <div class="submission-guidelines">
+                  <h4>Photo Guidelines:</h4>
+                  <ul>
+                    <li>High resolution (minimum 1920x1080)</li>
+                    <li>Clear, well-lit images</li>
+                    <li>Focus on people and community action</li>
+                    <li>Include photo context and location</li>
+                    <li>Ensure you have permission from people in photos</li>
+                  </ul>
                 </div>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="submission-form">
+                <h3>Submit Your Photos</h3>
+                <form id="photoSubmissionForm">
+                  <div class="form-group">
+                    <label for="submitter-name">Your Name *</label>
+                    <input
+                      type="text"
+                      id="submitter-name"
+                      name="submitter-name"
+                      required
+                      placeholder="Your full name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="submitter-email">Email Address *</label>
+                    <input
+                      type="email"
+                      id="submitter-email"
+                      name="submitter-email"
+                      required
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="photo-description">Photo Description *</label>
+                    <textarea
+                      id="photo-description"
+                      name="photo-description"
+                      rows="3"
+                      required
+                      placeholder="Describe what's happening in the photo, when and where it was taken"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="photo-upload">Upload Photos *</label>
+                    <input
+                      type="file"
+                      id="photo-upload"
+                      name="photo-upload"
+                      multiple
+                      accept="image/*"
+                      required
+                    />
+                    <p class="upload-note">
+                      You can upload up to 5 photos at once
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <input
+                        type="checkbox"
+                        id="photo-permission"
+                        name="photo-permission"
+                        required
+                      />
+                      <label for="photo-permission"
+                        >I have permission from all people visible in the photos
+                        and grant TODFCO permission to use these images.</label
+                      >
+                    </div>
+                  </div>
+                  <button type="submit" class="cta-button">
+                    Submit Photos
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>TODFCO</h3>
-                        <p>Together for Disaster Free Communities</p>
-                    </div>
-                    <div class="footer-description">
-                        <p>Empowering Kawempe Division to prevent, prepare for, respond to, and recover from disasters through community-led initiatives and sustainable solutions.</p>
-                        <div class="social-links">
-                            <a href="https://facebook.com/todfco" target="_blank" rel="noopener" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-                            <a href="https://twitter.com/todfco" target="_blank" rel="noopener" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
-                            <a href="https://linkedin.com/company/todfco" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                            <a href="https://instagram.com/todfco" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069 3.204 0 3.584.011 4.849.069 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.645.07-4.85.07zm0-2.163c-3.259 0-3.667-.014-4.947-.072-4.358-.2-6.78-2.618-6.98-6.98-.059-1.281-.073-1.689-.073-4.948 0-3.259.014-3.668.072-4.948.2-4.358 2.617-6.78 6.979-6.98 1.281-.058 1.689-.072 4.948-.072 3.259 0 3.668.014 4.948.072 4.358.2 6.78 2.618 6.98 6.98.058 1.281.072 1.689.072 4.948 0 3.259-.014 3.668-.072 4.948-.2 4.358-2.618 6.78-6.98 6.979-1.28.058-1.689.072-4.948.072zm-5.48-6.836a4.5 4.5 0 118.998 0 4.5 4.5 0 01-8.998 0zm4.5 2.25a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5z"/></svg></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="volunteer.html">Volunteer</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Programs</h4>
-                    <ul class="footer-links">
-                        <li><a href="services.html#disaster-risk">Disaster Risk Reduction</a></li>
-                        <li><a href="services.html#flood-prepared">Flood Preparedness</a></li>
-                        <li><a href="services.html#climate-environment">Climate & Environment</a></li>
-                        <li><a href="services.html#capacity-building">Capacity Building</a></li>
-                        <li><a href="services.html#humanitarian">Humanitarian Response</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul class="footer-links">
-                        <li><a href="blog.html">Blog & Stories</a></li>
-                        <li><a href="gallery.html">Photo Gallery</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="resources.html#emergency">Emergency Contacts</a></li>
-                        <li><a href="resources.html#guides">Disaster Guides</a></li>
-                        <li><a href="resources.html#training">Training Materials</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="currentColor" class="contact-icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            <div class="contact-details">
-                                <p><strong>Address:</strong></p>
-                                <p>Bwaise Parish, Kawempe Division<br>Kampala, Uganda</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="currentColor" class="contact-icon"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                            <div class="contact-details">
-                                <p><strong>Phone:</strong></p>
-                                <a href="tel:+256775081034">+256 775 081 034</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="currentColor" class="contact-icon"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                            <div class="contact-details">
-                                <p><strong>Email:</strong></p>
-                                <a href="mailto:info@todfco.org">info@todfco.org</a><br>
-                                <a href="mailto:contact@todfco.org">contact@todfco.org</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="currentColor" class="contact-icon"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                            <div class="contact-details">
-                                <p><strong>Office Hours:</strong></p>
-                                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: Emergency Only</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>TODFCO</h3>
+              <p>Together for Disaster Free Communities</p>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p class="copyright">&copy; 2026 TODFCO - Together for Disaster Free Communities. All rights reserved.</p>
-                </div>
+            <div class="footer-description">
+              <p>
+                Empowering Kawempe Division to prevent, prepare for, respond to,
+                and recover from disasters through community-led initiatives and
+                sustainable solutions.
+              </p>
+              <div class="social-links">
+                <a
+                  href="https://facebook.com/todfco"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                  aria-label="Facebook"
+                  ><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    /></svg
+                ></a>
+                <a
+                  href="https://twitter.com/todfco"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                  aria-label="Twitter"
+                  ><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    /></svg
+                ></a>
+                <a
+                  href="https://linkedin.com/company/todfco"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                  aria-label="LinkedIn"
+                  ><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    /></svg
+                ></a>
+                <a
+                  href="https://instagram.com/todfco"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                  aria-label="Instagram"
+                  ><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069 3.204 0 3.584.011 4.849.069 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.645.07-4.85.07zm0-2.163c-3.259 0-3.667-.014-4.947-.072-4.358-.2-6.78-2.618-6.98-6.98-.059-1.281-.073-1.689-.073-4.948 0-3.259.014-3.668.072-4.948.2-4.358 2.617-6.78 6.979-6.98 1.281-.058 1.689-.072 4.948-.072 3.259 0 3.668.014 4.948.072 4.358.2 6.78 2.618 6.98 6.98.058 1.281.072 1.689.072 4.948 0 3.259-.014 3.668-.072 4.948-.2 4.358-2.618 6.78-6.98 6.979-1.28.058-1.689.072-4.948.072zm-5.48-6.836a4.5 4.5 0 118.998 0 4.5 4.5 0 01-8.998 0zm4.5 2.25a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5z"
+                    /></svg
+                ></a>
+              </div>
             </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Programs</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="services.html#disaster-risk"
+                  >Disaster Risk Reduction</a
+                >
+              </li>
+              <li>
+                <a href="services.html#flood-prepared">Flood Preparedness</a>
+              </li>
+              <li>
+                <a href="services.html#climate-environment"
+                  >Climate & Environment</a
+                >
+              </li>
+              <li>
+                <a href="services.html#capacity-building">Capacity Building</a>
+              </li>
+              <li>
+                <a href="services.html#humanitarian">Humanitarian Response</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="blog.html">Blog & Stories</a></li>
+              <li><a href="gallery.html">Photo Gallery</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="resources.html#emergency">Emergency Contacts</a></li>
+              <li><a href="resources.html#guides">Disaster Guides</a></li>
+              <li><a href="resources.html#training">Training Materials</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="contact-icon"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                <div class="contact-details">
+                  <p><strong>Address:</strong></p>
+                  <p>Bwaise Parish, Kawempe Division<br />Kampala, Uganda</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="contact-icon"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+                <div class="contact-details">
+                  <p><strong>Phone:</strong></p>
+                  <a href="tel:+256775081034">+256 775 081 034</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="contact-icon"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+                <div class="contact-details">
+                  <p><strong>Email:</strong></p>
+                  <a href="mailto:info@todfco.org">info@todfco.org</a><br />
+                  <a href="mailto:contact@todfco.org">contact@todfco.org</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="contact-icon"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+                  />
+                </svg>
+                <div class="contact-details">
+                  <p><strong>Office Hours:</strong></p>
+                  <p>
+                    Monday - Friday: 8:00 AM - 6:00 PM<br />Saturday: 9:00 AM -
+                    4:00 PM<br />Sunday: Emergency Only
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="copyright">
+              &copy; 2026 TODFCO - Together for Disaster Free Communities. All
+              rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Gallery Lightbox Modal -->
     <div id="gallery-lightbox" class="gallery-lightbox">
-        <div class="lightbox-overlay"></div>
-        <div class="lightbox-content">
-            <button class="lightbox-close" aria-label="Close lightbox">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                </svg>
-            </button>
-            <div class="lightbox-image-container">
-                <img id="lightbox-image" src="" alt="Gallery image">
-                <div class="lightbox-loading">
-                    <div class="spinner"></div>
-                </div>
-            </div>
-            <div class="lightbox-info">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-description"></p>
-                <span id="lightbox-date"></span>
-            </div>
-            <div class="lightbox-navigation">
-                <button class="lightbox-prev" aria-label="Previous image">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                    </svg>
-                </button>
-                <button class="lightbox-next" aria-label="Next image">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="lightbox-counter">
-                <span id="current-image">1</span> / <span id="total-images">1</span>
-            </div>
+      <div class="lightbox-overlay"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close lightbox">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </button>
+        <div class="lightbox-image-container">
+          <img id="lightbox-image" src="" alt="Gallery image" />
+          <div class="lightbox-loading">
+            <div class="spinner"></div>
+          </div>
         </div>
+        <div class="lightbox-info">
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-description"></p>
+          <span id="lightbox-date"></span>
+        </div>
+        <div class="lightbox-navigation">
+          <button class="lightbox-prev" aria-label="Previous image">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+          <button class="lightbox-next" aria-label="Next image">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+        </div>
+        <div class="lightbox-counter">
+          <span id="current-image">1</span> / <span id="total-images">1</span>
+        </div>
+      </div>
     </div>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/256775081034" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
-        </svg>
+    <a
+      href="https://wa.me/256775081034"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"
+        />
+      </svg>
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
