@@ -1474,7 +1474,10 @@ main .section-header p {
   }
 
   .testimonial-content p {
-    font-size: 1.125rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    font-optical-sizing: auto;
   }
 
   .cta-content h2 {
@@ -1482,7 +1485,10 @@ main .section-header p {
   }
 
   .cta-content p {
-    font-size: 1.125rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    font-optical-sizing: auto;
   }
 
   .cta-buttons {
@@ -6204,10 +6210,11 @@ body {
 }
 
 .donation-method > p {
-  font-size: 0.9375rem;
   color: #64748b;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .method-details {
@@ -6219,9 +6226,11 @@ body {
 }
 
 .payment-info {
-  font-size: 0.9375rem;
   color: #475569;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .payment-info strong {
@@ -6313,10 +6322,12 @@ body {
 
 .recurring-form .form-group label {
   display: block;
-  font-size: 0.9375rem;
-  font-weight: 600;
   color: #1e293b;
   margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .recurring-form .form-group input,
@@ -6325,7 +6336,10 @@ body {
   padding: 0.75rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
   background: white;
   transition: all 0.2s ease;
 }
@@ -6410,8 +6424,10 @@ body {
   background: white;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
-  font-size: 0.9375rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
   color: #475569;
   text-align: center;
   cursor: pointer;
@@ -6457,8 +6473,10 @@ body {
 
 .donation-details .form-group label {
   display: block;
-  font-size: 0.9375rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
   color: #1e293b;
   margin-bottom: 0.5rem;
 }
@@ -6470,7 +6488,10 @@ body {
   padding: 0.75rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
   background: white;
   transition: all 0.2s ease;
 }
@@ -6502,8 +6523,10 @@ body {
 }
 
 .donation-details .checkbox-group label {
+  font-size: 1.3rem;
+  line-height: 1.8;
   font-weight: 400;
-  font-size: 0.9375rem;
+  font-optical-sizing: auto;
   color: #475569;
   margin-bottom: 0;
 }
@@ -6531,13 +6554,14 @@ body {
 .corporate-giving {
   padding: 5rem 0;
   background: #f8fafc;
+  display: flex;
 }
 
-.corporate-content .row {
+.corporate-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
-  align-items: flex-start;
+  gap: 1rem;
+  width: 90%;
 }
 
 .corporate-info,
@@ -6554,7 +6578,7 @@ body {
 
 .corporate-info h4,
 .corporate-contact h4 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: #1e293b;
   margin: 1.5rem 0 0.75rem;
 }
@@ -6587,7 +6611,10 @@ body {
 .contact-info p {
   margin-bottom: 0.75rem;
   color: #475569;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .hero-donation {
