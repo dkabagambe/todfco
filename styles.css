@@ -2903,7 +2903,9 @@ body {
   background-clip: text;
 }
 
-.intro-content p {
+.vision-card p,
+.objectives-card li,
+.mission-card p.intro-content p {
   color: #475569;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.3rem;
@@ -8297,12 +8299,20 @@ body.inner-page section {
     font-size: 1.75rem;
   }
   body.inner-page .section-header p {
-    font-size: 0.9375rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-optical-sizing: auto;
   }
   body.inner-page section p,
   body.inner-page .member-bio,
   body.inner-page .impact-description p {
-    font-size: 0.9375rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-optical-sizing: auto;
   }
 }
 
