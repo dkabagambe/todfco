@@ -513,11 +513,11 @@ a:hover {
   }
 
   h4 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   p {
-    font-size: 0.945rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 }
@@ -919,7 +919,7 @@ section {
 }
 
 .stat-label {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
   color: #0f172a;
@@ -1396,7 +1396,7 @@ main .section-header p {
 .cta-button {
   text-align: center;
   padding: 1rem 2.5rem;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border-radius: 50px;
   text-decoration: none;
@@ -1447,7 +1447,7 @@ main .section-header p {
   }
 
   .hero-content p {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .stats-grid {
@@ -1661,11 +1661,11 @@ main .section-header p {
   }
 
   .approach-card h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .approach-card p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .program-content {
@@ -1844,7 +1844,7 @@ main .section-header p {
   }
 
   .logo::after {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     left: 75px;
   }
 
@@ -2232,7 +2232,7 @@ body {
   }
 
   .logo::after {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     left: 65px;
   }
 
@@ -2835,7 +2835,7 @@ body {
   .blog-hero .hero-content p,
   .gallery-hero .hero-content p,
   .resources-hero .hero-content p {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -3086,7 +3086,7 @@ body {
 }
 
 .gender-intro {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #475569;
   margin-bottom: 1.5rem;
   line-height: 1.8;
@@ -3562,7 +3562,7 @@ body {
 }
 
 .stat-label {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #475569;
   text-transform: uppercase;
@@ -3837,7 +3837,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
@@ -3989,7 +3989,7 @@ body {
 .gallery-overlay span {
   color: white;
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -4084,7 +4084,7 @@ body {
 }
 
 .author-info h4 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #1e293b;
   margin-bottom: 0.25rem;
@@ -4420,7 +4420,7 @@ body {
   padding: 1rem 2.5rem;
   border-radius: 12px;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -4616,7 +4616,7 @@ body {
 }
 
 .social-link span {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   transition: transform 0.3s ease;
 }
 
@@ -4677,7 +4677,7 @@ body {
   }
 
   .member-info h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .member-role {
@@ -5169,7 +5169,7 @@ body {
   }
 
   .blog-card h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .blog-card p {
@@ -5213,7 +5213,7 @@ body {
   }
 
   .resource-card h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .resource-card p {
@@ -5324,7 +5324,7 @@ body {
   }
 
   .hero-content p {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 
@@ -5342,7 +5342,7 @@ body {
   }
 
   .cta-content p {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .cta-buttons {
@@ -5473,7 +5473,7 @@ body {
   }
 
   .timeline-content h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -5599,7 +5599,7 @@ body {
   }
 
   .approach-card h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -5614,7 +5614,7 @@ body {
   }
 
   .program-card h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -6073,7 +6073,7 @@ body {
   }
 
   .lightbox-info h3 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .lightbox-info p {
@@ -6153,13 +6153,13 @@ body {
 }
 
 .impact-description h3 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
 }
 
 .impact-description p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
   line-height: 1.5;
 }
@@ -6305,7 +6305,7 @@ body {
 }
 
 .recurring-benefits h4 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
@@ -6397,7 +6397,7 @@ body {
 }
 
 .donation-amounts h3 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #1e293b;
   margin-bottom: 1.25rem;
   font-weight: 600;
@@ -7688,7 +7688,7 @@ div img:not([class]):not([alt=""]) {
   }
 
   .slide-text p {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 
   .slide-image {
@@ -7935,7 +7935,7 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-section h4 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: #ffffff;
@@ -7983,7 +7983,7 @@ div img:not([class]):not([alt=""]) {
   line-height: 1.5;
 }
 .footer-description p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -8032,7 +8032,7 @@ div img:not([class]):not([alt=""]) {
   transition: all 0.3s ease;
   position: relative;
   padding-left: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -8086,7 +8086,7 @@ div img:not([class]):not([alt=""]) {
 .contact-details p,
 .contact-details a {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -8105,6 +8105,7 @@ div img:not([class]):not([alt=""]) {
   font-weight: 600;
   display: block;
   margin-bottom: 0.25rem;
+  font-size: 1.2rem;
 }
 
 .footer-bottom {
@@ -8124,7 +8125,7 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-bottom .copyright {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
   text-align: center;
@@ -8294,14 +8295,14 @@ body.inner-page .donation-method h3,
 body.inner-page .contact-card h3,
 body.inner-page .guide-card h3,
 body.inner-page .resource-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #1e293b;
 }
 
 body.inner-page h4,
 body.inner-page .risk-item h4 {
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: whitesmoke;
 }
@@ -8426,7 +8427,7 @@ body.inner-page .section-header {
   border: 2px solid #e2e8f0;
   background: white;
   font-weight: 600;
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -8530,7 +8531,7 @@ body.inner-page .section-header {
 
 .contact-information .contact-card p:last-child {
   margin-bottom: 0;
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
 }
 
@@ -8656,7 +8657,7 @@ body.inner-page .section-header {
 }
 
 .contact-option p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -8670,7 +8671,7 @@ body.inner-page .section-header {
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
@@ -8767,7 +8768,7 @@ body.inner-page .section-header {
   }
 
   .emergency-btn {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     padding: 0.875rem 1.5rem;
   }
 
@@ -8853,7 +8854,7 @@ body.inner-page .section-header {
 }
 
 .emergency-contacts .contact-info h3 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
 }
@@ -8861,7 +8862,7 @@ body.inner-page .section-header {
 .emergency-contacts .contact-number a {
   color: #2563eb;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
@@ -8870,7 +8871,7 @@ body.inner-page .section-header {
 }
 
 .emergency-contacts .contact-info p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
   margin: 0;
   line-height: 1.5;
@@ -8917,7 +8918,7 @@ body.inner-page .section-header {
 }
 
 .guide-card p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -8946,7 +8947,7 @@ body.inner-page .section-header {
   border: none;
   border-radius: 10px;
   font-weight: 600;
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -8998,7 +8999,7 @@ body.inner-page .section-header {
 }
 
 .training-item .item-content p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
   margin-bottom: 0.75rem;
   line-height: 1.5;
@@ -9067,7 +9068,7 @@ body.inner-page .section-header {
 }
 
 .warning-system > p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -9080,7 +9081,7 @@ body.inner-page .section-header {
 }
 
 .system-features li {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
   padding: 0.375rem 0;
   padding-left: 1.25rem;
@@ -9106,7 +9107,7 @@ body.inner-page .section-header {
   padding: 0.625rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 8px;
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
 }
 
 .alert-signup button {
@@ -9176,7 +9177,7 @@ body.inner-page .section-header {
 }
 
 .document-card p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -9268,7 +9269,7 @@ body.inner-page .section-header {
 .faq-content p {
   padding: 0 1.5rem 1.25rem;
   margin: 0;
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.7;
 }
@@ -9805,7 +9806,7 @@ body.inner-page .section-header {
 }
 
 .overlay-content h3 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: white;
   margin-bottom: 0.5rem;
@@ -9814,7 +9815,7 @@ body.inner-page .section-header {
 }
 
 .overlay-content p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -9954,14 +9955,14 @@ body.inner-page .section-header {
 }
 
 .video-info h3 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
   line-height: 1.4;
 }
 
 .video-info p {
-  font-size: 0.9375rem;
+  font-size: 1.2rem;
   color: #64748b;
   line-height: 1.6;
   margin-bottom: 0.75rem;
