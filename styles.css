@@ -8109,9 +8109,9 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-bottom {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   padding: 1.5rem 0;
-  margin-top: 3rem;
+  margin-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -8119,16 +8119,17 @@ div img:not([class]):not([alt=""]) {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .footer-bottom .copyright {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  font-weight: 700;
   margin: 0;
   text-align: center;
+  color: #ffffff;
 }
 
 /* Footer Responsive */
