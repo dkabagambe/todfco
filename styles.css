@@ -381,7 +381,7 @@ h5 {
 
 h6 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -491,7 +491,7 @@ a:hover {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -616,7 +616,7 @@ video {
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #64748b;
   font-optical-sizing: auto;
@@ -633,7 +633,7 @@ video {
   }
 
   .section-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -649,7 +649,7 @@ video {
   }
 
   .section-header p {
-    font-size: 0.945rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 }
@@ -696,11 +696,12 @@ video {
 
 @media (max-width: 480px) {
   #home .slide-content h1 {
-    font-size: 1.6rem !important;
+    font-size: 1.7rem !important;
+    font-weight: 600;
   }
 
   #home .slide-content p {
-    font-size: 0.95rem !important;
+    font-size: 1.1rem;
     margin-bottom: 20px !important;
   }
 }
@@ -1221,7 +1222,7 @@ section {
     line-height: 1.3;
   }
   .cta-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .cta-buttons {
     flex-direction: column;
@@ -1315,7 +1316,7 @@ main .section-header p {
     font-size: 1.875rem;
   }
   main .section-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1339,7 +1340,7 @@ main .section-header p {
     font-size: 1.5rem;
   }
   main .section-header p {
-    font-size: 0.9375rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1516,7 +1517,7 @@ main .section-header p {
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 
@@ -1583,7 +1584,7 @@ main .section-header p {
   }
 
   .testimonial-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .testimonial-author {
@@ -1623,7 +1624,7 @@ main .section-header p {
   }
 
   .cta-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 }
@@ -1652,7 +1653,7 @@ main .section-header p {
   }
 
   .stat-label {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .approach-card {
@@ -1867,7 +1868,7 @@ main .section-header p {
   }
 
   .logo::after {
-    font-size: 1rem;
+    font-size: 1.2rem;
     left: 65px;
   }
 
@@ -1975,7 +1976,7 @@ main .section-header p {
   #home .btn-slider {
     display: none;
     padding: 12px 40px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -2058,7 +2059,7 @@ main .section-header p {
   }
 
   .nav-link-booking {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     padding: 0.5rem;
   }
 }
@@ -2085,7 +2086,7 @@ main .section-header p {
   }
 
   .nav-link {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 
   .nav-link-booking {
@@ -2259,7 +2260,7 @@ body {
   }
 
   .logo::after {
-    font-size: 1rem;
+    font-size: 1.2rem;
     left: 60px;
   }
 
@@ -2268,7 +2269,7 @@ body {
   }
 
   .nav-link {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0.4rem 0;
   }
 
@@ -2343,13 +2344,13 @@ body {
   }
 
   .slide-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
   }
 
   .cta-button {
     padding: 0.8rem 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   /* Section Spacing to Prevent Overlap */
@@ -2368,7 +2369,7 @@ body {
   }
 
   .section-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -2499,7 +2500,7 @@ body {
   border: none;
   border-radius: 12px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
@@ -2561,7 +2562,7 @@ body {
   padding: 1rem 2.25rem;
   border-radius: 12px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
@@ -2605,7 +2606,7 @@ body {
     font-size: 1.75rem;
   }
   .section-header p {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -2858,7 +2859,7 @@ body {
   .blog-hero .hero-content p,
   .gallery-hero .hero-content p,
   .resources-hero .hero-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -3001,7 +3002,7 @@ body {
     font-size: 1.75rem;
   }
   .quick-intro .intro-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -3017,6 +3018,7 @@ body {
   position: relative;
   overflow: hidden;
   background: inherit !important;
+  font-size: 1.2rem !important;
 }
 
 .gender-resilience::before {
@@ -3096,7 +3098,9 @@ body {
   flex-direction: column;
   gap: 1.25rem;
 }
-
+.gender-resilience-content p {
+  font-size: 1.2rem;
+}
 .highlight-item {
   display: flex;
   gap: 1.5rem;
@@ -3473,7 +3477,7 @@ body {
   }
 
   .highlight-text h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -3507,7 +3511,7 @@ body {
   }
 
   .stat-text {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -4103,7 +4107,7 @@ body {
     padding: 2rem 1.5rem;
   }
   .testimonial-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -4563,7 +4567,7 @@ body {
 }
 
 .member-role {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #2563eb;
   margin-bottom: 1rem;
@@ -4682,7 +4686,7 @@ body {
   }
 
   .member-bio {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     min-height: 50px;
     line-height: 1.4;
   }
@@ -4940,7 +4944,7 @@ body {
   .btn {
     width: 100%;
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     border-radius: 12px;
     border: none;
@@ -4977,7 +4981,7 @@ body {
   }
 
   .section-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     line-height: 1.6;
   }
@@ -4999,7 +5003,7 @@ body {
   }
 
   .card p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     text-align: center;
     color: #64748b;
@@ -5100,7 +5104,7 @@ body {
   input[type="number"],
   select,
   textarea {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1rem;
   }
 
@@ -5110,7 +5114,7 @@ body {
 
   .submit-btn {
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -5223,7 +5227,7 @@ body {
   }
 
   .resource-card h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .resource-card p {
@@ -5367,11 +5371,11 @@ body {
 
 @media (max-width: 360px) {
   .nav-menu {
-    gap: 0.1rem;
+    gap: 0.3rem;
     padding: 3.5rem 0.4rem 0.75rem;
   }
   .nav-link {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     padding: 0.3rem 0.5rem;
   }
 }
@@ -5394,7 +5398,7 @@ body {
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
@@ -5406,7 +5410,7 @@ body {
   }
 
   .section-header p {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
@@ -5416,7 +5420,7 @@ body {
   }
 
   .stat-label {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
   }
 
   .approach-card {
@@ -5498,7 +5502,7 @@ body {
   }
 
   .testimonial-author h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .testimonial-author p {
@@ -5522,7 +5526,7 @@ body {
   }
 
   .cta-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 2rem;
   }
@@ -5533,7 +5537,7 @@ body {
 
   .cta-button {
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -5571,7 +5575,7 @@ body {
   }
 
   .section-header p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
@@ -5581,7 +5585,7 @@ body {
   }
 
   .stat-label {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .stat-card {
@@ -5600,7 +5604,7 @@ body {
   }
 
   .approach-card p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
 
@@ -5615,7 +5619,7 @@ body {
   }
 
   .program-card p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
 
@@ -5628,16 +5632,16 @@ body {
   .timeline-number {
     width: 35px;
     height: 35px;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 
   .timeline-content h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
 
   .timeline-content p {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
 
@@ -5656,7 +5660,7 @@ body {
   }
 
   .testimonial-author p {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 
   .partner-item {
@@ -5718,7 +5722,7 @@ body {
   }
 
   .section-header p {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
 
@@ -5727,17 +5731,17 @@ body {
   }
 
   .stat-label {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 
   .approach-card h3,
   .program-card h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .approach-card p,
   .program-card p {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
 
@@ -5750,7 +5754,7 @@ body {
   }
 
   .testimonial-content {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 
   .cta-content h2 {
@@ -5758,12 +5762,12 @@ body {
   }
 
   .cta-content p {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
 
   .cta-button {
     padding: 0.75rem 1.25rem;
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -5921,7 +5925,7 @@ body {
 }
 
 .lightbox-info p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #e2e8f0;
   line-height: 1.5;
@@ -6022,7 +6026,7 @@ body {
   }
 
   .lightbox-info span {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 
   .lightbox-navigation {
@@ -6044,7 +6048,7 @@ body {
   .lightbox-counter {
     top: 1rem;
     padding: 0.375rem 0.75rem;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -6243,7 +6247,7 @@ body {
   border: none;
   border-radius: 10px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -6365,7 +6369,7 @@ body {
 .recurring-form .cta-button {
   width: 100%;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border-radius: 10px;
   margin-top: 0.5rem;
@@ -6453,7 +6457,7 @@ body {
   padding: 0.875rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .custom-amount-input input:focus {
@@ -6753,7 +6757,7 @@ select:focus {
 }
 
 .site-name-tagline {
-  font-size: 1.3rem !important;
+  font-size: 1.2rem !important;
   margin-bottom: 35px !important;
   line-height: 1.6 !important;
   color: #06f8a7;
@@ -7505,7 +7509,7 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-info p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
   max-width: 400px;
@@ -7575,7 +7579,7 @@ div img:not([class]):not([alt=""]) {
   }
 
   .slide-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .nav-container {
@@ -7662,7 +7666,7 @@ div img:not([class]):not([alt=""]) {
   }
 
   .contact-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .hamburger {
@@ -7729,12 +7733,12 @@ div img:not([class]):not([alt=""]) {
   }
 
   .slide-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .cta-button {
     padding: 1rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .service-card {
@@ -8120,7 +8124,7 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-bottom .copyright {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
   text-align: center;
@@ -8352,7 +8356,7 @@ body.inner-page section {
     font-size: 2rem;
   }
   body.inner-page .section-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -8364,7 +8368,7 @@ body.inner-page section {
     font-size: 1.75rem;
   }
   body.inner-page .section-header p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     font-weight: 400;
@@ -8373,7 +8377,7 @@ body.inner-page section {
   body.inner-page section p,
   body.inner-page .member-bio,
   body.inner-page .impact-description p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     font-weight: 400;
@@ -8386,7 +8390,7 @@ body.inner-page section {
     font-size: 1.5rem;
   }
   body.inner-page .section-header p {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -8519,7 +8523,7 @@ body.inner-page .section-header {
 
 .contact-information .contact-card p {
   margin: 0 0 0.5rem 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.6;
 }
@@ -8701,7 +8705,7 @@ body.inner-page .section-header {
 
 .emergency-text p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
@@ -8796,7 +8800,7 @@ body.inner-page .section-header {
   }
 
   .emergency-btn {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .map-container {
@@ -9330,7 +9334,7 @@ body.inner-page .section-header {
   }
 
   .faq-header h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .alert-signup {
@@ -9489,7 +9493,7 @@ body.inner-page .section-header {
 }
 
 .why-volunteer .benefit-card p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.7;
   margin: 0;
@@ -9535,7 +9539,7 @@ body.inner-page .section-header {
 }
 
 .opportunity-type {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -9690,7 +9694,7 @@ body.inner-page .section-header {
 }
 
 .story-quote {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.7;
   font-style: italic;
@@ -10004,7 +10008,7 @@ body.inner-page .section-header {
 }
 
 .impact-stats .stat-label {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1e293b;
   margin-bottom: 0.25rem;
@@ -10038,14 +10042,14 @@ body.inner-page .section-header {
 
 .submission-info p,
 .submission-form p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #475569;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
 .submission-guidelines h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
@@ -10057,7 +10061,7 @@ body.inner-page .section-header {
 
 .submission-guidelines li {
   color: #475569;
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -10117,11 +10121,11 @@ body.inner-page .section-header {
   }
 
   .overlay-content h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .overlay-content p {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
   }
 
   .impact-stats .stats-grid {
