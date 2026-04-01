@@ -402,7 +402,12 @@
           <p>Join our team and start making a difference today</p>
         </div>
         <div class="form-container">
-          <form class="volunteer-form" id="volunteerForm">
+          <form
+            class="volunteer-form"
+            id="volunteerForm"
+            action="volunteer.php"
+            method="POST"
+          >
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -475,11 +480,28 @@
                   <label for="location">Area of Residence *</label>
                   <select id="location" name="location" required>
                     <option value="">Select your area</option>
-                    <option value="bwaise">Bwaise</option>
-                    <option value="kawempe">Kawempe</option>
-                    <option value="kubiri">Kubiri</option>
-                    <option value="bwaise-ii">Bwaise II</option>
-                    <option value="bwaise-iii">Bwaise III</option>
+
+                    <!-- Kawempe Division Parishes -->
+                    <option value="bwaise_i">Bwaise I</option>
+                    <option value="bwaise_ii">Bwaise II</option>
+                    <option value="bwaise_iii">Bwaise III</option>
+                    <option value="mulago_i">Mulago I</option>
+                    <option value="mulago_ii">Mulago II</option>
+                    <option value="mulago_iii">Mulago III</option>
+                    <option value="mulago_muluka_i">Muluka I</option>
+                    <option value="mulago_muluka_ii">Muluka II</option>
+                    <option value="mulago_muluka_iii">Muluka III</option>
+                    <option value="mulago_muluka_iv">Muluka IV</option>
+                    <option value="kawempe_i">Kawempe I</option>
+                    <option value="kawempe_ii">Kawempe II</option>
+                    <option value="kazo_angola">Kazo Angola</option>
+                    <option value="kazo">Kazo</option>
+                    <option value="makerere_iii">Makerere III</option>
+                    <option value="mpererwe">Mpererwe</option>
+                    <option value="kyebando">Kyebando</option>
+                    <option value="namungoona">Namungoona</option>
+                    <option value="kanyanya">Kanyanya</option>
+
                     <option value="other">Other</option>
                   </select>
                 </div>
