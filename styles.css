@@ -1750,8 +1750,8 @@ main .section-header p {
 .navbar-brand .logo,
 .navbar-brand img,
 .logo img {
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -1882,8 +1882,8 @@ main .section-header p {
   }
 
   .logo img {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
   }
 
   .logo::after {
@@ -1910,8 +1910,8 @@ main .section-header p {
   }
 
   .logo img {
-    height: 65px;
-    width: 65px;
+    height: 80px;
+    width: 80px;
     border: 2px solid rgba(255, 255, 255, 0.9);
   }
 
@@ -1936,8 +1936,8 @@ main .section-header p {
   }
 
   .logo img {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
   }
 
   .logo::after {
