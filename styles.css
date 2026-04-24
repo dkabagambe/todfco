@@ -592,7 +592,7 @@ video {
 .intro-image video,
 .sidebar-image video {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -672,7 +672,7 @@ video {
 }
 
 #home .slide-content h1 {
-  font-size: 3.4rem !important;
+  font-size: 3rem !important;
   margin-bottom: 20px !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
@@ -6764,7 +6764,7 @@ select:focus {
 }
 
 .site-name-inner {
-  max-width: 900px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -6869,7 +6869,7 @@ select:focus {
 
 .slide-content {
   position: absolute;
-  top: 65%;
+  top: 33%;
   left: 10%;
   transform: translateY(-50%);
   max-width: 650px;
