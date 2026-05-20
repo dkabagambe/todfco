@@ -2457,7 +2457,7 @@ body {
 /* Hero Sections for All Pages */
 .about-hero {
   min-height: 100vh;
-  background: url("images/sli1.jpeg");
+  background: url("images/conference/IMG_7584.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2471,7 +2471,7 @@ body {
 
 .services-hero {
   min-height: 100vh;
-  background: url("images/sli2.jpeg");
+  background: url("images/conference/IMG_7510.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2485,7 +2485,7 @@ body {
 
 .contact-hero {
   min-height: 100vh;
-  background: url("images/sli3.jpeg");
+  background: url("images/conference/IMG_7616.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2499,7 +2499,7 @@ body {
 
 .volunteer-hero {
   min-height: 100vh;
-  background: url("images/sli4.jpeg");
+  background: url("images/conference/IMG_7610.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2513,7 +2513,7 @@ body {
 
 .donate-hero {
   min-height: 100vh;
-  background: url("images/sli5.jpeg");
+  background: url("images/conference/IMG_7539.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2527,7 +2527,7 @@ body {
 
 .blog-hero {
   min-height: 100vh;
-  background: url("images/sli1.jpeg");
+  background: url("images/conference/IMG_7538.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2543,7 +2543,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/sli2.jpeg");
+    url("images/conference/IMG_7629.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2559,7 +2559,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/sli3.jpeg");
+    url("images/conference/IMG_7507.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
