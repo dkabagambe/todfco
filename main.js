@@ -97,69 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
     lastScroll = currentScroll;
   });
 
-  // Mobile menu toggle
-  const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-menu");
-
-  if (hamburger && navMenu) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-      document.body.style.overflow = navMenu.classList.contains("active")
-        ? "hidden"
-        : "";
-      if (navMenu.classList.contains("active")) {
-        document.body.classList.add("menu-open");
-      } else {
-        document.body.classList.remove("menu-open");
-      }
-    });
-
-    // Close menu when clicking on links
-    document.querySelectorAll(".nav-link, .nav-cta").forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.body.style.overflow = "";
-        document.body.classList.remove("menu-open");
-      });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener("click", (e) => {
-      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.body.style.overflow = "";
-        document.body.classList.remove("menu-open");
-      }
-    });
-
-    // Close menu when clicking the close button (X)
-    navMenu.addEventListener("click", (e) => {
-      if (
-        e.target === navMenu ||
-        e.target.textContent === "✕" ||
-        e.target.closest("::before")
-      ) {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.body.style.overflow = "";
-        document.body.classList.remove("menu-open");
-      }
-    });
-
-    // Close menu on ESC key
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && navMenu.classList.contains("active")) {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.body.style.overflow = "";
-        document.body.classList.remove("menu-open");
-      }
-    });
-  }
-
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {

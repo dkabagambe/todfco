@@ -1783,7 +1783,7 @@ main .section-header p {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: inherit;
+  background: #1e293b;
   margin: 3px 0;
   transition: all 0.3s ease;
 }
@@ -5062,6 +5062,7 @@ body {
   }
 
   .nav-menu {
+    display: flex;
     position: fixed;
     top: 0;
     left: -100%;
