@@ -527,28 +527,51 @@ document.addEventListener("DOMContentLoaded", () => {
   new GalleryLightbox();
 });
 
-// Initialize Swiper Slider
-$(document).ready(function () {
-  const swiper = new Swiper(".swiper-container", {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    speed: 1000,
+// Hero Slider
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".hero-slide");
+  const dotsContainer = document.querySelector(".slider-dots");
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.className = "slider-dot" + (i === 0 ? " active" : "");
+    dot.setAttribute("aria-label", "Go to slide " + (i + 1));
+    dot.addEventListener("click", () => goTo(i));
+    dotsContainer.appendChild(dot);
   });
+
+  function goTo(n) {
+    slides[current].classList.remove("active");
+    dotsContainer.children[current].classList.remove("active");
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add("active");
+    dotsContainer.children[current].classList.add("active");
+    resetTimer();
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 5000);
+  }
+
+  document.querySelector(".slider-prev").addEventListener("click", () => goTo(current - 1));
+  document.querySelector(".slider-next").addEventListener("click", () => goTo(current + 1));
+
+  // Touch swipe
+  let touchStartX = 0;
+  const sliderEl = document.querySelector(".hero-slider");
+  sliderEl.addEventListener("touchstart", e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  sliderEl.addEventListener("touchend", e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+  });
+
+  resetTimer();
 });
 
 // Owl Carousel for Partners
