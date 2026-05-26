@@ -223,7 +223,27 @@
         </div>
       </div>
     </section>
+    <!-- Changes made across 3 files:
 
+gallery.html
+- Added a new "Conference & Outreach" category tab (first after "All Photos")
+- Added 16 conference images to the gallery grid, all tagged data-category="conference", with descriptive captions and May 
+2026 dates
+- Added a new featured story at the top of the Featured Stories slider highlighting the Bwaise conference
+- Added a new "Voices from Bwaise" section (dark background, before the Video Gallery) featuring both community quotes 
+styled prominently
+
+index.html
+- Added a new "Sensitizing Bwaise on Flood Preparedness" section with two-column layout, narrative text about the conference
+/outreach, a 6-image photo strip from the conference, and a link to the gallery
+- Added both Bwaise community quotes to the existing "Community Voices" testimonials slider
+
+about.html
+- Added a new "Flood Sensitization in Bwaise" section (before Membership) with:
+  - Narrative text about the conference and flood inspections
+  - A 4-card grid covering the key themes (Flood Education, Flood Inspections, Prevention Measures, Community Voices)
+  - A 6-image photo strip from the conference
+  - Both community quotes in the testimonials style -->
     <!-- Main Content -->
     <main>
       <!-- Quick Introduction -->
@@ -232,7 +252,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="intro-content animate-fadeInUp">
-                <h2>Who We Are</h2>
+                <h2>Who We Are - TODFCO</h2>
                 <p>
                   Together for Disaster Free Communities (TODFCO) is a
                   not-for-profit Community-Based Organization operating in
@@ -705,6 +725,179 @@
         </div>
       </section>
 
+      <!-- Bwaise Flood Sensitization Section -->
+      <section
+        class="bwaise-sensitization"
+        style="padding: 5rem 0; background: #f8fafc"
+      >
+        <div class="container">
+          <div class="section-header animate-fadeIn">
+            <h2>Sensitizing Bwaise on Flood Preparedness</h2>
+            <p>
+              How TODFCO educated, listened to, and empowered the Bwaise
+              community to face floods with knowledge and resilience
+            </p>
+          </div>
+          <div class="row" style="margin-bottom: 3rem">
+            <div class="col-md-6">
+              <div class="intro-content animate-fadeInUp">
+                <h3
+                  style="
+                    font-family: &quot;Cormorant Garamond&quot;, serif;
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                  "
+                >
+                  Community Education &amp; Outreach
+                </h3>
+                <p>
+                  In May 2026, TODFCO conducted a comprehensive community
+                  conference and outreach program in Bwaise Parish, Kawempe
+                  Division. The program brought together residents, community
+                  leaders, and disaster management experts to share knowledge on
+                  flood risks, prevention measures, and emergency preparedness.
+                </p>
+                <p>
+                  The outreach included structured flood inspections across
+                  flood-prone zones in Bwaise, giving the team firsthand insight
+                  into the vulnerabilities faced by households and the community
+                  at large. Residents were educated on practical flood
+                  protection measures — from household-level interventions like
+                  elevating belongings and using sandbags, to community-wide
+                  actions like drainage maintenance and early warning systems.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="intro-image animate-slideInRight">
+                <img
+                  src="images/conference/IMG_7506.JPG"
+                  alt="TODFCO community sensitization session in Bwaise"
+                  style="
+                    width: 100%;
+                    border-radius: 16px;
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 3rem">
+            <div class="col-md-6" style="order: 2">
+              <div class="intro-content animate-fadeInUp">
+                <h3
+                  style="
+                    font-family: &quot;Cormorant Garamond&quot;, serif;
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                  "
+                >
+                  Listening to the Community
+                </h3>
+                <p>
+                  A central pillar of the outreach was listening. TODFCO team
+                  members engaged directly with Bwaise residents — men, women,
+                  youth, and elders — to understand their lived experiences with
+                  floods, the losses they have endured, and the challenges they
+                  face in recovery. These conversations were carefully
+                  documented to inform TODFCO's programs and advocacy efforts.
+                </p>
+                <p>
+                  The voices collected from Bwaise paint a vivid picture of a
+                  community that is resilient, resourceful, and determined — but
+                  one that urgently needs sustained support to break the cycle
+                  of flood-driven poverty and loss.
+                </p>
+                <a
+                  href="gallery.html"
+                  class="cta-button hover-lift"
+                  style="display: inline-block; margin-top: 1rem"
+                  >View Conference Gallery</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6" style="order: 1">
+              <div class="intro-image animate-slideInRight">
+                <img
+                  src="images/conference/IMG_7537.JPG"
+                  alt="TODFCO team listening to Bwaise community members"
+                  style="
+                    width: 100%;
+                    border-radius: 16px;
+                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Conference Photo Strip -->
+          <div
+            class="gallery-grid"
+            style="
+              grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+              gap: 1rem;
+            "
+          >
+            <div class="gallery-item">
+              <img
+                src="images/conference/IMG_7511.JPG"
+                alt="Flood preparedness training"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Preparedness Training</h3>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/conference/IMG_7520.JPG"
+                alt="Community outreach"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content"><h3>Community Outreach</h3></div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/conference/IMG_7549.JPG"
+                alt="Flood inspection"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content"><h3>Flood Inspection</h3></div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/conference/IMG_7580.JPG"
+                alt="Community engagement"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content"><h3>Community Engagement</h3></div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/conference/IMG_7612.JPG"
+                alt="Education session"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content"><h3>Education Session</h3></div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/conference/IMG_7629.JPG"
+                alt="Resilience building"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content"><h3>Resilience Building</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Testimonials -->
       <section class="testimonials">
         <div class="container">
@@ -713,6 +906,33 @@
             <p>Stories from those we've helped and worked with</p>
           </div>
           <div class="testimonials-slider">
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>"Water is life when you are not living in Bwaise."</p>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <h4>Bwaise Resident</h4>
+                    <p>Community Outreach, May 2026</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-content">
+                <p>
+                  "If it were not for floods, Bwaise would be the richest place
+                  in Uganda. This is because every time it rains, floods cause a
+                  lot of losses that consume much of our income during
+                  recovery."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <h4>Bwaise Resident</h4>
+                    <p>Community Outreach, May 2026</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="testimonial-item">
               <div class="testimonial-content">
                 <p>
