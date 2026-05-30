@@ -371,7 +371,7 @@ h4 {
 
 h5 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -381,7 +381,7 @@ h5 {
 
 h6 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -394,7 +394,7 @@ h6 {
 /* Paragraph & Text Styles */
 p {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #334155;
@@ -984,7 +984,7 @@ section {
 
 .testimonial-content p {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.8;
   color: #0f172a;
   font-style: italic;
@@ -2309,7 +2309,7 @@ body {
 .cta-button {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: linear-gradient(135deg, #cacaca, #dadada);
   color: white;
   text-decoration: none;
   border: none;
@@ -2342,11 +2342,11 @@ body {
 .cta-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
-  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  background: linear-gradient(135deg, #000, #111);
 }
 
 .cta-button.primary {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: linear-gradient(135deg, #cacaca,#dadada);
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
