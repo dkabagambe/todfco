@@ -7005,8 +7005,12 @@ body {
   border-radius: 16px;
   padding: 1.25rem 1.5rem;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  
 }
-
+.risk-item h4{
+color:#222 !important;
+font-size:1.6rem;
+}
 .flood-cards {
   margin-top: 2.5rem;
 }
