@@ -8600,7 +8600,7 @@ body.inner-page .section-header {
 
 /* Emergency banner */
 .emergency-banner {
-  background: linear-gradient(135deg, #dc2626, #ef4444);
+  background: linear-gradient(135deg, #cacaca, #dadada);
   padding: 2rem;
 }
 
