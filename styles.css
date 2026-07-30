@@ -410,7 +410,7 @@ p:last-child {
 ul,
 ol {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #334155;
@@ -421,7 +421,7 @@ ol {
 
 li {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #334155;
@@ -432,7 +432,7 @@ li {
 ul li,
 ol li {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #334155;
@@ -604,7 +604,7 @@ video {
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .section-header h2 {
@@ -1208,6 +1208,7 @@ main {
 
 #home {
   margin-bottom: 0;
+  padding-top: 0;
 }
 
 /* Unified section padding rhythm for index */
@@ -1678,7 +1679,7 @@ main .section-header p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   margin: 0 auto;
   position: relative;
   height: auto;
@@ -2293,15 +2294,25 @@ body {
   padding-top: 80px;
 }
 
+body.home-page {
+  padding-top: 0;
+}
+
 @media (max-width: 768px) {
   body {
     padding-top: 70px;
+  }
+  body.home-page {
+    padding-top: 0;
   }
 }
 
 @media (max-width: 576px) {
   body {
     padding-top: 60px;
+  }
+  body.home-page {
+    padding-top: 0;
   }
 }
 
@@ -6399,8 +6410,8 @@ body {
 
 .corporate-info h4,
 .corporate-contact h4 {
-  font-size: 1.5rem;
-  color: #1e293b;
+  font-size: 1.6rem;
+  color: #000 !important;
   margin: 1.5rem 0 0.75rem;
 }
 
@@ -6546,9 +6557,8 @@ select:focus {
 /* Hero Slider - Swiper.js */
 .hero-slider {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 122px);
   overflow: hidden;
-  margin-top: 92px;
   background: #0f172a;
 }
 
@@ -6633,12 +6643,13 @@ body {
 #home .swiper-container,
 #home .swiper,
 .swiper-container {
-  margin-top: -80px !important;
+  text-align: center;
+  margin-top: 0px !important;
 }
 .hero-slider {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: calc(100vh - 122px);
   min-height: 500px;
   overflow: hidden;
 }
@@ -6677,12 +6688,13 @@ body {
   inset: 0;
   display: flex;
   align-items: center;
-  top: 0;
-  left: 0;
+  justify-content: flex-start;
+  padding-top: 80px; /* push content below the fixed header */
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.25); /* light enough to keep image bright */
+  background: rgba(0, 0, 0, 0.25);
   z-index: 5;
+  box-sizing: border-box;
 }
 
 .slide-content {
@@ -6696,12 +6708,11 @@ body {
   font-size: 3rem !important;
   margin-bottom: 20px !important;
   font-weight: 700 !important;
-  line-height: 1.2 !important;
+  line-height: 1.3 !important;
   color: #fff;
 }
 
 .slide-content p {
-  max-width: 520px;
   font-size: 1.5rem !important;
   margin-bottom: 35px !important;
   line-height: 1.6 !important;
@@ -6793,14 +6804,14 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
-  body {
-    padding-top: 60px;
+  #home {
+    padding-top: 0;
   }
 
   #home .swiper-container,
   #home .swiper,
   .swiper-container {
-    margin-top: -60px;
+    margin-top: 0px;
   }
 
   .hero-slider {
@@ -6808,22 +6819,27 @@ body {
     min-height: 420px;
   }
   .slide-content {
-    left: 0;
-    right: 0;
-    top: 60%;
-    transform: translateY(-40%);
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding: 0 12px;
+    padding: 0 16px;
     box-sizing: border-box;
   }
 
   .slide-content h1 {
-    font-size: 2.5rem !important;
+    font-size: 1.9rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 14px !important;
   }
   .slide-content p {
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 24px !important;
+    max-width: 100% !important;
+  }
+  .slide-overlay {
+    padding-top: 70px;
+    align-items: center;
+    justify-content: center;
   }
   .btn-slider {
     padding: 11px 28px;
@@ -6838,14 +6854,10 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
-    padding-top: 50px;
-  }
-
   #home .swiper-container,
   #home .swiper,
   .swiper-container {
-    margin-top: -50px;
+    margin-top: 0;
   }
 
   .hero-slider {
@@ -6853,12 +6865,13 @@ body {
     min-height: 480px;
   }
   .slide-content h1 {
-    font-size: 1.7rem !important;
-    font-weight: 600;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
   }
 
   .slide-content p {
-    font-size: 1.1rem;
+    font-size: 0.95rem !important;
     margin-bottom: 20px !important;
   }
 }
