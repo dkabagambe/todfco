@@ -882,6 +882,13 @@ section {
   section {
     padding: 3rem 0;
   }
+
+  /* Hero slider section must never have section padding */
+  section#home {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
 }
 
 /* Hero Section Professional Centering */
@@ -6647,7 +6654,9 @@ select:focus {
 /* Hero Slider - Swiper.js */
 .hero-slider {
   position: relative;
-  height: calc(100vh - 122px);
+  width: 100%;
+  height: 100svh;
+  min-height: 480px;
   overflow: hidden;
   background: #0f172a;
   margin: 0;
@@ -6728,27 +6737,25 @@ select:focus {
 }
 
 /* ===== HERO SLIDER ===== */
-/* Prevent Content Overlap with Fixed Header */
 body {
   margin: 0;
 }
+
+section#home {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
 #home .swiper-container,
 #home .swiper,
 .swiper-container {
   text-align: center;
   margin-top: 0px !important;
 }
-.hero-slider {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 122px);
-  min-height: 500px;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-}
 
 .hero-slides {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -6756,6 +6763,8 @@ body {
 .hero-slide {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: opacity 0.8s ease;
   pointer-events: none;
@@ -6767,13 +6776,15 @@ body {
 }
 
 .hero-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  filter: brightness(0.95); /* adjust if needed – 0.8–0.9 is ideal */
+  object-position: center;
+  filter: brightness(0.95);
   transition: transform 6s ease;
 }
 
@@ -6899,7 +6910,9 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
   #home {
-    padding-top: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
   }
 
   #home .swiper-container,
@@ -6909,9 +6922,32 @@ body {
   }
 
   .hero-slider {
-    height: 70vh;
-    min-height: 420px;
+    width: 100%;
+    height: 100svh;
+    min-height: 480px;
   }
+
+  .hero-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
   .slide-content {
     width: 90%;
     margin: 0 auto;
@@ -6948,6 +6984,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  #home {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   #home .swiper-container,
   #home .swiper,
   .swiper-container {
@@ -6955,9 +6996,32 @@ body {
   }
 
   .hero-slider {
-    height: 75vh;
+    width: 100%;
+    height: 100svh;
     min-height: 480px;
   }
+
+  .hero-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
   .slide-content h1 {
     font-size: 1.5rem !important;
     font-weight: 700 !important;
@@ -10257,6 +10321,41 @@ section {
   section {
     padding: 2.5rem 0;
   }
+}
+
+/* ── Hero slider: NEVER has section padding ── */
+section#home {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+section#home .hero-slider {
+  width: 100% !important;
+  height: 100svh !important;
+  min-height: 480px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+section#home .hero-slides {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+section#home .hero-slide {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+section#home .hero-slide img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
 }
 
 /* ── Section headers ── */
