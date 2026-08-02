@@ -265,6 +265,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Governance accordion (about page)
+  document.querySelectorAll(".accordion-header").forEach((header) => {
+    header.addEventListener("click", () => {
+      const accordionItem = header.closest(".accordion-item");
+      const wasActive = accordionItem.classList.contains("active");
+      document
+        .querySelectorAll(".accordion-item")
+        .forEach((item) => item.classList.remove("active"));
+      if (!wasActive) accordionItem.classList.add("active");
+    });
+  });
+
   console.log("TODFCO Website Initialized Successfully! 🚀");
 });
 
@@ -550,4 +562,27 @@ $(document).ready(function () {
       },
     },
   });
+});
+
+
+// ── Accordion event delegation (works on all pages, no timing issues) ──
+document.addEventListener("click", function (e) {
+  // FAQ accordion (.faq-header)
+  const faqHeader = e.target.closest(".faq-header");
+  if (faqHeader) {
+    const faqItem = faqHeader.closest(".faq-item");
+    const wasActive = faqItem.classList.contains("active");
+    document.querySelectorAll(".faq-item").forEach((item) => item.classList.remove("active"));
+    if (!wasActive) faqItem.classList.add("active");
+    return;
+  }
+
+  // Governance accordion (.accordion-header)
+  const accHeader = e.target.closest(".accordion-header");
+  if (accHeader) {
+    const accItem = accHeader.closest(".accordion-item");
+    const wasActive = accItem.classList.contains("active");
+    document.querySelectorAll(".accordion-item").forEach((item) => item.classList.remove("active"));
+    if (!wasActive) accItem.classList.add("active");
+  }
 });
