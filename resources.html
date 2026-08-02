@@ -1093,5 +1093,18 @@
         });
       })();
     </script>
+    <script>
+      // FAQ accordion
+      document.querySelectorAll(".faq-header").forEach(function (header) {
+        header.addEventListener("click", function () {
+          var item = header.closest(".faq-item");
+          var isActive = item.classList.contains("active");
+          document.querySelectorAll(".faq-item").forEach(function (i) {
+            i.classList.remove("active");
+          });
+          if (!isActive) item.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>
