@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -395,9 +395,8 @@ h6 {
 /* Paragraph & Text Styles */
 p {
   /* Typography & Readability */
-  font-family:
-    "EB Garamond", "Cormorant Garamond", "Garamond", "Georgia", serif;
-  font-size: 1.25rem; /* 20px */
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
   line-height: 1.7; /* Better for serif */
   font-weight: 400;
   color: #1f2937;
@@ -466,9 +465,8 @@ p.p-card {
 /* List Styles */
 ul,
 ol {
-  font-family:
-    "EB Garamond", "Cormorant Garamond", "Garamond", "Georgia", serif;
-  font-size: 1.25rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 1.75rem;
   color: #1f2937;
@@ -480,9 +478,8 @@ ol {
 }
 
 li {
-  font-family:
-    "EB Garamond", "Cormorant Garamond", "Garamond", "Georgia", serif;
-  font-size: 1.25rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 0.5rem;
   color: #1f2937;
@@ -491,9 +488,8 @@ li {
 
 ul li,
 ol li {
-  font-family:
-    "EB Garamond", "Cormorant Garamond", "Garamond", "Georgia", serif;
-  font-size: 1.25rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
   line-height: 1.7;
   color: #1f2937;
   font-weight: 400;
@@ -512,7 +508,7 @@ small,
     Helvetica,
     Arial,
     sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   line-height: 1.65;
   color: #64748b;
 }
@@ -536,16 +532,7 @@ b {
 
 /* Links */
 a {
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #2563eb;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -570,11 +557,11 @@ a:hover {
   }
 
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -596,11 +583,11 @@ a:hover {
   }
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.7;
   }
 }
@@ -705,7 +692,7 @@ video {
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #64748b;
   font-optical-sizing: auto;
@@ -722,7 +709,7 @@ video {
   }
 
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -738,7 +725,7 @@ video {
   }
 
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.7;
   }
 }
@@ -963,7 +950,7 @@ section {
 }
 
 .stat-label {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
   color: #0f172a;
@@ -1035,7 +1022,7 @@ section {
 .program-content p {
   font-family:
     "EB Garamond", "Cormorant Garamond", "Garamond", "Georgia", serif;
-  font-size: 1.25rem !important;
+  font-size: 1.3rem !important;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #334155;
@@ -1174,12 +1161,12 @@ section {
 .overlay-content p {
   text-align: center;
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 .gallery-date {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   opacity: 0.8;
 }
 
@@ -1249,7 +1236,7 @@ section {
 .cta-content p {
   text-align: center;
   margin-bottom: 2.5rem;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
 }
@@ -1281,7 +1268,7 @@ section {
     line-height: 1.3;
   }
   .cta-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .cta-buttons {
     flex-direction: column;
@@ -1328,7 +1315,7 @@ main .section-header h2 {
 }
 
 main .section-header p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   max-width: 600px;
 }
 
@@ -1355,7 +1342,7 @@ main .section-header h2 {
   font-size: 2.25rem;
 }
 main .section-header p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 767px) {
@@ -1380,7 +1367,7 @@ main .section-header h2 {
   font-size: 1.875rem;
 }
 main .section-header p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 480px) {
@@ -1405,7 +1392,7 @@ main .section-header h2 {
   font-size: 1.5rem;
 }
 main .section-header p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 /* Impact stats: 2×2 grid on small tablets (576–767px) */
@@ -1460,7 +1447,7 @@ main .section-header p {
 .cta-button {
   text-align: center;
   padding: 1rem 2.5rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 50px;
   text-decoration: none;
@@ -1511,7 +1498,7 @@ main .section-header p {
   }
 
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .stats-grid {
@@ -1581,7 +1568,7 @@ main .section-header p {
   }
 
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
   }
 
@@ -1618,7 +1605,7 @@ main .section-header p {
   }
 
   .approach-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .program-grid {
@@ -1648,7 +1635,7 @@ main .section-header p {
   }
 
   .testimonial-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .testimonial-author {
@@ -1688,7 +1675,7 @@ main .section-header p {
   }
 
   .cta-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
   }
 }
@@ -1705,7 +1692,7 @@ main .section-header p {
   }
 
   .hero-content p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .stat-card {
@@ -1717,7 +1704,7 @@ main .section-header p {
   }
 
   .stat-label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .approach-card {
@@ -1725,11 +1712,11 @@ main .section-header p {
   }
 
   .approach-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .approach-card p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .program-content {
@@ -1737,11 +1724,11 @@ main .section-header p {
   }
 
   .program-content h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .program-content p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .testimonial-item {
@@ -1749,7 +1736,7 @@ main .section-header p {
   }
 
   .testimonial-content p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .partner-logo {
@@ -1830,7 +1817,7 @@ main .section-header p {
   text-decoration: none;
   color: #1e293b;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
@@ -1908,7 +1895,7 @@ main .section-header p {
   }
 
   .logo::after {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     left: 75px;
   }
 
@@ -1932,7 +1919,7 @@ main .section-header p {
   }
 
   .logo::after {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     left: 65px;
   }
 
@@ -1941,7 +1928,7 @@ main .section-header p {
   }
 
   .nav-link {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1961,7 +1948,7 @@ main .section-header p {
   }
 
   .logo::after {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     left: 60px;
   }
 
@@ -1986,7 +1973,7 @@ main .section-header p {
   }
 
   .logo::after {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     left: 55px;
   }
 }
@@ -2009,11 +1996,11 @@ main .section-header p {
   }
 
   .nav-link {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .nav-link-booking {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0.5rem;
   }
 }
@@ -2040,7 +2027,7 @@ main .section-header p {
   }
 
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .nav-link-booking {
@@ -2161,7 +2148,7 @@ body {
   }
 
   .logo::after {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     left: 65px;
   }
 
@@ -2189,7 +2176,7 @@ body {
   }
 
   .logo::after {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     left: 60px;
   }
 
@@ -2273,13 +2260,13 @@ body {
   }
 
   .slide-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1.5rem;
   }
 
   .cta-button {
     padding: 0.8rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   /* Section Spacing to Prevent Overlap */
@@ -2298,7 +2285,7 @@ body {
   }
 
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -2422,7 +2409,7 @@ body.home-page {
   border: none;
   border-radius: 12px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
@@ -2484,7 +2471,7 @@ body.home-page {
   padding: 1rem 2.25rem;
   border-radius: 12px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
@@ -2528,7 +2515,7 @@ body.home-page {
     font-size: 1.75rem;
   }
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -2554,7 +2541,7 @@ body.home-page {
 }
 
 .section-header p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #64748b;
   max-width: 600px;
   margin: 0 auto;
@@ -2757,7 +2744,7 @@ body.home-page {
   .blog-hero .hero-content p,
   .gallery-hero .hero-content p,
   .resources-hero .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -2781,7 +2768,7 @@ body.home-page {
   .blog-hero .hero-content p,
   .gallery-hero .hero-content p,
   .resources-hero .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -2925,7 +2912,7 @@ body.home-page {
     font-size: 1.75rem;
   }
   .quick-intro .intro-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -3002,7 +2989,7 @@ body.home-page {
 }
 
 .gender-intro {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   margin-bottom: 1.5rem;
   line-height: 1.8;
@@ -3015,7 +3002,7 @@ body.home-page {
   gap: 1.25rem;
 }
 .gender-resilience-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 .highlight-item {
@@ -3134,7 +3121,7 @@ body.home-page {
 }
 
 .highlight-text h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 0.6rem;
@@ -3206,7 +3193,7 @@ body.home-page {
 }
 
 .accent-content p {
-  font-size: 1.025rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -3260,7 +3247,7 @@ body.home-page {
   }
 
   .gender-intro {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
   .gender-visual-wrapper {
@@ -3296,7 +3283,7 @@ body.home-page {
   }
 
   .gender-intro {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     margin-bottom: 1.75rem;
   }
 
@@ -3394,7 +3381,7 @@ body.home-page {
   }
 
   .highlight-text h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
 
@@ -3408,7 +3395,7 @@ body.home-page {
   }
 
   .accent-content h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     margin-bottom: 0.75rem;
   }
 
@@ -3428,7 +3415,7 @@ body.home-page {
   }
 
   .stat-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -3479,7 +3466,7 @@ body.home-page {
 }
 
 .stat-label {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #475569;
   text-transform: uppercase;
@@ -3660,7 +3647,7 @@ body.home-page {
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   transition: all 0.3s ease;
 }
 
@@ -3761,7 +3748,7 @@ body.home-page {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
@@ -3915,7 +3902,7 @@ body.home-page {
 .gallery-overlay span {
   color: white;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -3967,7 +3954,7 @@ body.home-page {
 }
 
 .testimonial-content p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.8;
   font-style: italic;
@@ -4010,7 +3997,7 @@ body.home-page {
 }
 
 .author-info h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #1e293b;
   margin-bottom: 0.25rem;
@@ -4033,7 +4020,7 @@ body.home-page {
     padding: 2rem 1.5rem;
   }
   .testimonial-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -4157,7 +4144,7 @@ body.home-page {
 
 .partners-carousel .owl-prev span,
 .partners-carousel .owl-next span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #2563eb;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -4346,7 +4333,7 @@ body.home-page {
   padding: 1rem 2.5rem;
   border-radius: 12px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -4493,7 +4480,7 @@ body.home-page {
 }
 
 .member-role {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #2563eb;
   margin-bottom: 1rem;
@@ -4542,7 +4529,7 @@ body.home-page {
 }
 
 .social-link span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: transform 0.3s ease;
 }
 
@@ -4567,7 +4554,7 @@ body.home-page {
   }
 
   .member-info h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .member-bio {
@@ -4603,7 +4590,7 @@ body.home-page {
   }
 
   .member-info h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .member-role {
@@ -4612,7 +4599,7 @@ body.home-page {
   }
 
   .member-bio {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     min-height: 50px;
     line-height: 1.4;
   }
@@ -4870,7 +4857,7 @@ body.home-page {
   .btn {
     width: 100%;
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     border-radius: 12px;
     border: none;
@@ -4908,7 +4895,7 @@ body.home-page {
   }
 
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     text-align: center;
     line-height: 1.6;
   }
@@ -4930,7 +4917,7 @@ body.home-page {
   }
 
   .card p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     text-align: center;
     color: #64748b;
@@ -5031,7 +5018,7 @@ body.home-page {
   input[type="number"],
   select,
   textarea {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 1rem;
   }
 
@@ -5041,7 +5028,7 @@ body.home-page {
 
   .submit-btn {
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -5082,7 +5069,7 @@ body.home-page {
   }
 
   .blog-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .blog-card p {
@@ -5096,7 +5083,7 @@ body.home-page {
   }
 
   .blog-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .blog-card p {
@@ -5140,7 +5127,7 @@ body.home-page {
   }
 
   .resource-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .resource-card p {
@@ -5154,7 +5141,7 @@ body.home-page {
   }
 
   .resource-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .resource-card p {
@@ -5252,7 +5239,7 @@ body.home-page {
   }
 
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
   }
 
@@ -5270,7 +5257,7 @@ body.home-page {
   }
 
   .cta-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .cta-buttons {
@@ -5303,7 +5290,7 @@ body.home-page {
     padding: 3.5rem 0.4rem 0.75rem;
   }
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0.3rem 0.5rem;
   }
 }
@@ -5326,7 +5313,7 @@ body.home-page {
   }
 
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
@@ -5338,7 +5325,7 @@ body.home-page {
   }
 
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.5;
   }
 
@@ -5348,7 +5335,7 @@ body.home-page {
   }
 
   .stat-label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .approach-card {
@@ -5357,7 +5344,7 @@ body.home-page {
   }
 
   .approach-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     margin-bottom: 0.75rem;
   }
 
@@ -5372,7 +5359,7 @@ body.home-page {
   }
 
   .program-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     margin-bottom: 0.75rem;
   }
 
@@ -5401,7 +5388,7 @@ body.home-page {
   }
 
   .timeline-content h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
 
@@ -5430,7 +5417,7 @@ body.home-page {
   }
 
   .testimonial-author h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .testimonial-author p {
@@ -5454,7 +5441,7 @@ body.home-page {
   }
 
   .cta-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 2rem;
   }
@@ -5465,7 +5452,7 @@ body.home-page {
 
   .cta-button {
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -5503,7 +5490,7 @@ body.home-page {
   }
 
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.5;
   }
 
@@ -5513,7 +5500,7 @@ body.home-page {
   }
 
   .stat-label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .stat-card {
@@ -5527,12 +5514,12 @@ body.home-page {
   }
 
   .approach-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
 
   .approach-card p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
   }
 
@@ -5542,12 +5529,12 @@ body.home-page {
   }
 
   .program-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
 
   .program-card p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
   }
 
@@ -5560,16 +5547,16 @@ body.home-page {
   .timeline-number {
     width: 35px;
     height: 35px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .timeline-content h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
 
   .timeline-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
   }
 
@@ -5588,7 +5575,7 @@ body.home-page {
   }
 
   .testimonial-author p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .partner-item {
@@ -5650,7 +5637,7 @@ body.home-page {
   }
 
   .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.4;
   }
 
@@ -5659,17 +5646,17 @@ body.home-page {
   }
 
   .stat-label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .approach-card h3,
   .program-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .approach-card p,
   .program-card p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
   }
 
@@ -5682,7 +5669,7 @@ body.home-page {
   }
 
   .testimonial-content {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .cta-content h2 {
@@ -5690,12 +5677,12 @@ body.home-page {
   }
 
   .cta-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .cta-button {
     padding: 0.75rem 1.25rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -5853,7 +5840,7 @@ body.home-page {
 }
 
 .lightbox-info p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: #e2e8f0;
   line-height: 1.5;
@@ -5946,7 +5933,7 @@ body.home-page {
   }
 
   .lightbox-info h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .lightbox-info p {
@@ -5954,7 +5941,7 @@ body.home-page {
   }
 
   .lightbox-info span {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .lightbox-navigation {
@@ -5976,7 +5963,7 @@ body.home-page {
   .lightbox-counter {
     top: 1rem;
     padding: 0.375rem 0.75rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -6001,7 +5988,7 @@ body.home-page {
   }
 
   .lightbox-info h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .lightbox-info p {
@@ -6081,13 +6068,13 @@ body.home-page {
 }
 
 .impact-description h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
 }
 
 .impact-description p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
   line-height: 1.5;
 }
@@ -6133,7 +6120,7 @@ body.home-page {
 }
 
 .donation-method h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
@@ -6156,7 +6143,7 @@ body.home-page {
 
 .payment-info {
   color: #475569;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -6174,7 +6161,7 @@ body.home-page {
   border: none;
   border-radius: 10px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -6232,7 +6219,7 @@ body.home-page {
 }
 
 .recurring-benefits h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
@@ -6296,7 +6283,7 @@ body.home-page {
 .recurring-form .cta-button {
   width: 100%;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 10px;
   margin-top: 0.5rem;
@@ -6324,7 +6311,7 @@ body.home-page {
 }
 
 .donation-amounts h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 1.25rem;
   font-weight: 600;
@@ -6384,7 +6371,7 @@ body.home-page {
   padding: 0.875rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .custom-amount-input input:focus {
@@ -6468,7 +6455,7 @@ body.home-page {
 
 .donation-actions .cta-button {
   padding: 1rem 2.5rem;
-  font-size: 1.0625rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border-radius: 10px;
 }
@@ -6556,7 +6543,7 @@ body.home-page {
 
 .donation-amount {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-right: 0.5rem;
 }
 
@@ -6687,7 +6674,7 @@ select:focus {
 }
 
 .site-name-tagline {
-  font-size: 1.2rem !important;
+  font-size: 1.3rem !important;
   margin-bottom: 35px !important;
   line-height: 1.6 !important;
   color: #06f8a7;
@@ -6859,7 +6846,7 @@ section#home {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: background 0.3s;
   display: flex;
@@ -6962,7 +6949,7 @@ section#home {
     margin-bottom: 14px !important;
   }
   .slide-content p {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
     margin-bottom: 24px !important;
     max-width: 100% !important;
   }
@@ -7029,7 +7016,7 @@ section#home {
   }
 
   .slide-content p {
-    font-size: 0.95rem !important;
+  font-size: 1.3rem !important;
     margin-bottom: 20px !important;
   }
 }
@@ -7098,7 +7085,7 @@ section#home {
 .service-card p {
   color: #64748b;
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: 1.3rem;
 }
 
 /* Service Page Images */
@@ -7137,10 +7124,12 @@ section#home {
 .climate-environment,
 .capacity-building,
 .humanitarian-response {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #f8fafc;
 }
-
+.climate-environment p {
+  font-size: 1.3rem !important;
+}
 .disaster-risk-reduction .row,
 .flood-preparedness .row,
 .climate-environment .row,
@@ -7149,10 +7138,13 @@ section#home {
   align-items: center;
   row-gap: 2.5rem;
 }
-
+.section-header p {
+  font-size: 1.4rem !important;
+  line-height: 1.7;
+}
 .service-content {
   padding-right: 2rem;
-  font-size: 1.02rem;
+  font-size: 1.3rem;
   line-height: 1.7;
 }
 
@@ -7205,23 +7197,28 @@ section#home {
 }
 
 .emergency-response {
-  margin-top: 3rem;
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center; /* center the text itself */
+  padding: 3rem 1rem;
 }
 
+.emergency-response .response-content {
+  width: 100%;
+}
 .response-content {
-  background: #ffffff;
-  color: #0f172a;
-  border-radius: 24px;
-  padding: 2.5rem 2rem;
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+  color: #040405;
 }
 
 .response-content h3 {
-  color: #0f172a;
+  color: #101113;
+  font-size: 1.4rem !important;
 }
 
 .response-content p {
-  color: #4b5563;
+  color: #0d0e0f;
+  font-size: 1.3rem;
 }
 
 /* Humanitarian response final section */
@@ -7244,7 +7241,7 @@ section#home {
 }
 
 .humanitarian-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-bottom: 0.75rem;
   color: #0f172a;
 }
@@ -7257,23 +7254,27 @@ section#home {
 
 .recovery-approach {
   margin-top: 3rem;
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center; /* center the text itself */
+  box-flex-group: inherit;
 }
 
 .recovery-content {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 2.25rem 2rem;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  width: 100%;
 }
 
 .recovery-content h3 {
   margin-bottom: 1rem;
-  color: #0f172a;
+  color: #040405;
+  font-size: 1.4rem !important;
 }
 
 .recovery-content p {
-  color: #4b5563;
+  color: #040405;
   line-height: 1.7;
+  font-size: 1.3rem !important;
 }
 
 .capacity-grid {
@@ -7327,11 +7328,15 @@ section#home {
 .disaster-icons,
 .humanitarian-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
 }
-
+.climate-icons h4 {
+  color: #222 !important
+  ;
+  font-size: 1.4rem;
+}
 .climate-item,
 .capacity-item,
 .disaster-item,
@@ -7365,7 +7370,7 @@ section#home {
 .capacity-item h4,
 .disaster-item h4,
 .humanitarian-item h4 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   color: #0f172a;
 }
@@ -7569,7 +7574,7 @@ div img:not([class]):not([alt=""]) {
 .service-card p {
   color: #64748b;
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: 1.3rem;
 }
 
 /* Footer */
@@ -7595,14 +7600,14 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-info p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
   max-width: 400px;
 }
 
 .footer-contact h4 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: #ffffff;
@@ -7624,7 +7629,7 @@ div img:not([class]):not([alt=""]) {
 }
 
 .contact-icon {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   width: 30px;
   text-align: center;
 }
@@ -7665,7 +7670,7 @@ div img:not([class]):not([alt=""]) {
   }
 
   .slide-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .nav-container {
@@ -7752,7 +7757,7 @@ div img:not([class]):not([alt=""]) {
   }
 
   .contact-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .hamburger {
@@ -7774,7 +7779,7 @@ div img:not([class]):not([alt=""]) {
   }
 
   .slide-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .slide-image {
@@ -7819,12 +7824,12 @@ div img:not([class]):not([alt=""]) {
   }
 
   .slide-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .cta-button {
     padding: 1rem 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .service-card {
@@ -8021,7 +8026,7 @@ div img:not([class]):not([alt=""]) {
 }
 
 .footer-section h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: #ffffff;
@@ -8069,7 +8074,7 @@ div img:not([class]):not([alt=""]) {
   line-height: 1.5;
 }
 .footer-description p {
-  font-size: 1.2rem;
+  font-size: 1.3rem !important;
   line-height: 1.4;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -8118,7 +8123,7 @@ div img:not([class]):not([alt=""]) {
   transition: all 0.3s ease;
   position: relative;
   padding-left: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -8172,7 +8177,7 @@ div img:not([class]):not([alt=""]) {
 .contact-details p,
 .contact-details a {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -8191,7 +8196,7 @@ div img:not([class]):not([alt=""]) {
   font-weight: 600;
   display: block;
   margin-bottom: 0.25rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .footer-bottom {
@@ -8444,7 +8449,7 @@ body.inner-page section {
     font-size: 2rem;
   }
   body.inner-page .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -8456,7 +8461,7 @@ body.inner-page section {
     font-size: 1.75rem;
   }
   body.inner-page .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     font-weight: 400;
@@ -8465,7 +8470,7 @@ body.inner-page section {
   body.inner-page section p,
   body.inner-page .member-bio,
   body.inner-page .impact-description p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     font-weight: 400;
@@ -8478,7 +8483,7 @@ body.inner-page section {
     font-size: 1.5rem;
   }
   body.inner-page .section-header p {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -8514,7 +8519,7 @@ body.inner-page .section-header {
   border: 2px solid #e2e8f0;
   background: white;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -8604,21 +8609,21 @@ body.inner-page .section-header {
 }
 
 .contact-information .contact-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
 
 .contact-information .contact-card p {
   margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.6;
 }
 
 .contact-information .contact-card p:last-child {
   margin-bottom: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
 }
 
@@ -8738,13 +8743,13 @@ body.inner-page .section-header {
 }
 
 .contact-option h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
 }
 
 .contact-option p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -8758,7 +8763,7 @@ body.inner-page .section-header {
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: all 0.3s ease;
 }
 
@@ -8793,7 +8798,7 @@ body.inner-page .section-header {
 
 .emergency-text p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0;
 }
 
@@ -8803,7 +8808,7 @@ body.inner-page .section-header {
   background: white;
   color: #dc2626;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   text-decoration: none;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -8851,11 +8856,11 @@ body.inner-page .section-header {
   }
 
   .emergency-text h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .emergency-btn {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0.875rem 1.5rem;
   }
 
@@ -8888,7 +8893,7 @@ body.inner-page .section-header {
   }
 
   .emergency-btn {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .map-container {
@@ -8941,7 +8946,7 @@ body.inner-page .section-header {
 }
 
 .emergency-contacts .contact-info h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
 }
@@ -8949,7 +8954,7 @@ body.inner-page .section-header {
 .emergency-contacts .contact-number a {
   color: #2563eb;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: none;
 }
 
@@ -8958,7 +8963,7 @@ body.inner-page .section-header {
 }
 
 .emergency-contacts .contact-info p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
   margin: 0;
   line-height: 1.5;
@@ -8999,13 +9004,13 @@ body.inner-page .section-header {
 }
 
 .guide-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
 
 .guide-card p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -9034,7 +9039,7 @@ body.inner-page .section-header {
   border: none;
   border-radius: 10px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -9051,7 +9056,7 @@ body.inner-page .section-header {
 }
 
 .training-category h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
@@ -9080,13 +9085,13 @@ body.inner-page .section-header {
 }
 
 .training-item .item-content h4 {
-  font-size: 1.0625rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
 }
 
 .training-item .item-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
   margin-bottom: 0.75rem;
   line-height: 1.5;
@@ -9149,13 +9154,13 @@ body.inner-page .section-header {
 }
 
 .warning-system h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
 
 .warning-system > p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -9168,7 +9173,7 @@ body.inner-page .section-header {
 }
 
 .system-features li {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
   padding: 0.375rem 0;
   padding-left: 1.25rem;
@@ -9194,7 +9199,7 @@ body.inner-page .section-header {
   padding: 0.625rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .alert-signup button {
@@ -9258,13 +9263,13 @@ body.inner-page .section-header {
 }
 
 .document-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
 
 .document-card p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -9325,7 +9330,7 @@ body.inner-page .section-header {
 }
 
 .faq-header h3 {
-  font-size: 1.0625rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin: 0;
   flex: 1;
@@ -9333,7 +9338,7 @@ body.inner-page .section-header {
 }
 
 .faq-icon {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #2563eb;
   transition: transform 0.3s ease;
@@ -9356,7 +9361,7 @@ body.inner-page .section-header {
 .faq-content p {
   padding: 0 1.5rem 1.25rem;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.7;
 }
@@ -9422,7 +9427,7 @@ body.inner-page .section-header {
   }
 
   .faq-header h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .alert-signup {
@@ -9575,13 +9580,13 @@ body.inner-page .section-header {
 }
 
 .why-volunteer .benefit-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 1rem;
 }
 
 .why-volunteer .benefit-card p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.7;
   margin: 0;
@@ -9621,13 +9626,13 @@ body.inner-page .section-header {
 }
 
 .opportunity-header h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin: 0;
 }
 
 .opportunity-type {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -9714,7 +9719,7 @@ body.inner-page .section-header {
 }
 
 .requirements-list h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 1.25rem;
   padding-bottom: 0.75rem;
@@ -9769,7 +9774,7 @@ body.inner-page .section-header {
 }
 
 .story-text h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.25rem;
 }
@@ -9782,7 +9787,7 @@ body.inner-page .section-header {
 }
 
 .story-quote {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.7;
   font-style: italic;
@@ -9893,7 +9898,7 @@ body.inner-page .section-header {
 }
 
 .overlay-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: white;
   margin-bottom: 0.5rem;
@@ -9902,7 +9907,7 @@ body.inner-page .section-header {
 }
 
 .overlay-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -10042,14 +10047,14 @@ body.inner-page .section-header {
 }
 
 .video-info h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.5rem;
   line-height: 1.4;
 }
 
 .video-info p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #64748b;
   line-height: 1.6;
   margin-bottom: 0.75rem;
@@ -10096,7 +10101,7 @@ body.inner-page .section-header {
 }
 
 .impact-stats .stat-label {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #1e293b;
   margin-bottom: 0.25rem;
@@ -10104,7 +10109,7 @@ body.inner-page .section-header {
 
 .impact-stats .stat-description {
   color: #64748b;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   font-weight: 500;
   font-optical-sizing: auto;
@@ -10130,14 +10135,14 @@ body.inner-page .section-header {
 
 .submission-info p,
 .submission-form p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
 .submission-guidelines h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 0.75rem;
 }
@@ -10209,11 +10214,11 @@ body.inner-page .section-header {
   }
 
   .overlay-content h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .overlay-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .impact-stats .stats-grid {
@@ -10305,7 +10310,7 @@ input,
 select,
 textarea,
 a {
-  font-family: "Inter", "Cormorant Garamond", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* ── Section spacing ── */
@@ -10374,7 +10379,7 @@ section#home .hero-slide img {
   animation: none !important;
 }
 .section-header p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: var(--muted);
   max-width: 620px;
   margin: 0 auto;
@@ -10713,7 +10718,7 @@ section#home .hero-slide img {
   padding: 1.5rem;
 }
 .member-info h3 {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 0.25rem;
@@ -10727,7 +10732,7 @@ section#home .hero-slide img {
   margin-bottom: 0.75rem !important;
 }
 .member-bio {
-  font-size: 0.95rem !important;
+font-size: 1.3rem !important;
   color: var(--muted) !important;
   line-height: 1.6 !important;
   margin-bottom: 0 !important;
@@ -10857,7 +10862,7 @@ section#home .hero-slide img {
   margin-bottom: 1.25rem;
 }
 .intro-content p {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   color: #475569;
   line-height: 1.75;
 }
@@ -10954,7 +10959,7 @@ section#home .hero-slide img {
   transform: translateY(-4px);
 }
 .testimonial-content p {
-  font-size: 1.05rem !important;
+  font-size: 1.3rem !important;
   line-height: 1.75 !important;
   color: var(--mid) !important;
   font-style: italic;
@@ -11023,7 +11028,7 @@ section#home .hero-slide img {
 }
 .post-title,
 .blog-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--dark);
   line-height: 1.4;
@@ -11077,7 +11082,7 @@ section#home .hero-slide img {
   border-color: rgba(29, 78, 216, 0.2);
 }
 .donation-method h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 0.75rem;
@@ -11128,7 +11133,7 @@ section#home .hero-slide img {
   margin-bottom: 1.25rem;
 }
 .service-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 0.75rem;
@@ -11208,12 +11213,12 @@ section#home .hero-slide img {
   margin: 0;
 }
 .footer-description p {
-  font-size: 0.95rem !important;
+  font-size: 1.3rem !important;
   color: rgba(255, 255, 255, 0.6) !important;
   line-height: 1.7 !important;
 }
 .footer-links a {
-  font-size: 0.9rem !important;
+  font-size: 1.3rem !important;
   color: rgba(255, 255, 255, 0.65) !important;
   transition:
     color 0.25s,
@@ -11236,7 +11241,7 @@ section#home .hero-slide img {
 }
 .contact-details p,
 .contact-details a {
-  font-size: 0.9rem !important;
+  font-size: 1.3rem !important;
   color: rgba(255, 255, 255, 0.65) !important;
 }
 .contact-details a:hover {
@@ -11255,7 +11260,7 @@ section#home .hero-slide img {
   border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 .footer-bottom .copyright {
-  font-size: 1.2rem !important;
+  font-size: 1.3rem !important;
   color: var(--blue-lt) !important;
   font-weight: 400 !important;
   text-align: center;
@@ -11458,7 +11463,7 @@ section#home .hero-slide img {
 
 .outreach-stat-label {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 .outreach-cta {
@@ -11539,7 +11544,7 @@ section#home .hero-slide img {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 .cycle-badge-blue {
@@ -11562,7 +11567,7 @@ section#home .hero-slide img {
 }
 
 .cycle-card .cycle-label {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #64748b;
   margin-bottom: 0.75rem;
   font-weight: 600;
@@ -11670,12 +11675,12 @@ section#home .hero-slide img {
   color: #fff;
   margin: 0;
   font-family: "EB Garamond", "Cormorant Garamond", serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 .engagement-card-caption p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin: 0.25rem 0 0;
   max-width: none;
 }
@@ -11782,7 +11787,7 @@ section#home .hero-slide img {
 }
 
 .assessment-stat-label {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #64748b;
 }
 
@@ -11849,7 +11854,7 @@ section#home .hero-slide img {
   font-style: italic;
   color: #334155;
   line-height: 1.8;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 .testimonial-card-author {
@@ -11866,7 +11871,7 @@ section#home .hero-slide img {
 
 .testimonial-card-author p {
   color: #64748b;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin: 0;
   font-style: normal;
 }
