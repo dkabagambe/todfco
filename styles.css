@@ -2890,6 +2890,13 @@ body.home-page {
   }
   .quick-intro .row {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .quick-intro .row > [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
   }
   .quick-intro .intro-content {
     text-align: center;
@@ -6728,6 +6735,99 @@ select:focus {
   }
 }
 
+/* ===== FEATURED VIDEO SECTION ===== */
+.featured-video-section {
+  background: linear-gradient(
+    160deg,
+    #0b1120 0%,
+    #020617 60%,
+    #0b1120 100%
+  ) !important;
+  padding: 3rem 0 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-video-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #06f8a7, transparent);
+  opacity: 0.6;
+}
+
+.featured-video-header {
+  margin-bottom: 2.5rem;
+}
+
+.featured-video-header h2 {
+  color: #ffffff !important;
+}
+
+.featured-video-header p,
+.featured-video-section .section-header p {
+  color: #ffffff !important;
+}
+
+.featured-video-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(6, 248, 167, 0.15);
+  position: relative;
+}
+
+/* 16:9 responsive ratio */
+.featured-video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.featured-video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .featured-video-section {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .featured-video-wrapper {
+    max-width: 100%;
+    border-radius: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .featured-video-section {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .featured-video-wrapper {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+}
+
 .heroSwiper {
   width: 100%;
   height: 100%;
@@ -10405,6 +10505,32 @@ section#home .hero-slide img {
   line-height: 1.7;
 }
 
+/* ── Featured video section: override global section-header resets ── */
+.featured-video-section,
+.featured-video-section * {
+  -webkit-text-fill-color: unset !important;
+}
+.featured-video-section {
+  background: linear-gradient(
+    160deg,
+    #0b1120 0%,
+    #020617 60%,
+    #0b1120 100%
+  ) !important;
+}
+.featured-video-section .section-header h2,
+.featured-video-header h2 {
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+.featured-video-section .section-header p,
+.featured-video-header p {
+  color: #ffffff !important;
+}
+
 /* ── Header / nav polish ── */
 .header {
   background: rgba(255, 255, 255, 0.96);
@@ -11906,4 +12032,53 @@ section#home .hero-slide img {
 
 .testimonials-cta {
   text-align: center;
+}
+
+/* ===== FEATURED VIDEO SECTION – FINAL OVERRIDE (must stay at end of file) ===== */
+.featured-video-section {
+  background: linear-gradient(
+    160deg,
+    #0b1120 0%,
+    #020617 60%,
+    #0b1120 100%
+  ) !important;
+}
+.featured-video-section *,
+.featured-video-section h2,
+.featured-video-section p {
+  -webkit-text-fill-color: unset !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+}
+.featured-video-section .section-header h2,
+.featured-video-header h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+.featured-video-section .section-header p,
+.featured-video-header p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+/* Restore iframe and embed – background: none would break the video embed */
+.featured-video-embed {
+  background: #000 !important;
+}
+.featured-video-section::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #06f8a7,
+    transparent
+  ) !important;
+}
+
+/* ===== QUICK INTRO COLUMNS – FINAL OVERRIDE ===== */
+@media (max-width: 991px) {
+  .quick-intro .row > [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
 }
